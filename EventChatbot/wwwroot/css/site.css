@@ -26,17 +26,11 @@ html {
 } */
 
 /* Flexbox Yapısı */
-.d-flex {
-  display: flex !important; /* Bootstrap'ın .d-flex kuralını geçersiz kılar */
-}
 
-.vh-100 {
-  height: 100vh !important; /* Bootstrap'ın .vh-100 kuralını geçersiz kılar */
-}
 
 /* Left Section (calendar) */
 .calendar-container {
-  background-color: #15ff00;
+  background-color: hsl(202, 47%, 82%);
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 90% !important;
@@ -52,7 +46,7 @@ html {
   margin-bottom: 20px;
 }
 
-.calendar-header button {
+/*.calendar-header button {
   background-color: #4CAF50;
   color: white;
   border: none;
@@ -60,11 +54,11 @@ html {
   cursor: pointer;
   font-size: 16px;
   border-radius: 5px;
-}
+}*/
 
-.calendar-header button:hover {
+/*.calendar-header button:hover {
   background-color: #45a049;
-}
+}*/
 
 #month-name {
   font-size: 20px;
@@ -90,14 +84,14 @@ html {
 }
 
 .calendar-table th {
-  background-color: #ff0000;
+  background-color: hsl(214, 49%, 81%);
   font-weight: bold;
   font-size: 13px; /* Başlık yazı boyutunu küçülterek hizalamayı düzelt */
   padding: 10px 5px; /* Yatayda daha az padding */
 }
 
 .calendar-table td:hover {
-  background-color: #a18a78;
+  background-color: #aa9483;
   border-radius: 5px;
 }
 
@@ -117,25 +111,25 @@ html {
 }
 
 .calendar-day.special-day {
-  background-color: #ffcc00;
+  background-color: #81b4a5;
   color: #fff;
 }
 
 .calendar-day.special-day:hover {
-  background-color: #e6b800;
+  background-color: #81b4a5;
 }
 
 .calendar-day.selected {
-  background-color: #4CAF50;
+  background-color: #93d4c1;
   color: #fff;
 }
 
 .calendar-day.selected:hover {
-  background-color: #45a049;
+  background-color: #93d4c1;
 }
 
 .special-day {
-  background-color: #ffcc00; /* Özel gün için sarı arka plan */
+  background-color: #81b4a5; /* Özel gün için mavi arka plan */
   font-weight: bold;
 }
 .add-special-day {
@@ -161,7 +155,10 @@ html {
   padding: 20px;
   text-align: left;
 }
-
+#calendar-side {
+  background-color: #f8f9fa;
+  border: none;
+}
 #events-list {
   background-color: white;
   border-radius: 10px;

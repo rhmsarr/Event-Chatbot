@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "g4j1WZaO52T8BsY6RZXq/jiIGzq/dsedH9agaumYzZU=",
+  "Hash": "G6lqIPy9/0n+31U1tVakwNIQFj9b8OVUFrJbMfbg6H4=",
   "Source": "EventChatbot",
   "BasePath": "_content/EventChatbot",
   "Mode": "Default",
@@ -737,25 +737,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\33780\\Desktop\\ai\\EventChatbot\\EventChatbot\\wwwroot\\lib\\bootstrap\\dist\\css\\theme.bootstrap.min.css",
-      "SourceId": "EventChatbot",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\33780\\Desktop\\ai\\EventChatbot\\EventChatbot\\wwwroot\\",
-      "BasePath": "_content/EventChatbot",
-      "RelativePath": "lib/bootstrap/dist/css/theme.bootstrap.min.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\theme.bootstrap.min.css"
     },
     {
       "Identity": "C:\\Users\\33780\\Desktop\\ai\\EventChatbot\\EventChatbot\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
