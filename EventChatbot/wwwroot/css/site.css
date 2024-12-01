@@ -1,0 +1,173 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* Genel Stil */
+/* body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+} */
+
+/* Flexbox Yapısı */
+.d-flex {
+  display: flex !important; /* Bootstrap'ın .d-flex kuralını geçersiz kılar */
+}
+
+.vh-100 {
+  height: 100vh !important; /* Bootstrap'ın .vh-100 kuralını geçersiz kılar */
+}
+
+/* Left Section (calendar) */
+.calendar-container {
+  background-color: #15ff00;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90% !important;
+  max-width: 500px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.calendar-header button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.calendar-header button:hover {
+  background-color: #45a049;
+}
+
+#month-name {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+.calendar-table {
+  width: 100%; /* Tablo genişliği kapsayıcı kadar yap */
+  table-layout: fixed; /* Hücre genişliklerini eşit dağıtır */
+  border-collapse: collapse; /* Sınırları birleştir */
+}
+
+.calendar-table th,
+.calendar-table td {
+  width: calc(100% / 7); /* Haftanın 7 günü için eşit genişlik */
+  padding: 12px; /* Hücre içindeki boşluk */
+  text-align: center;
+  font-size: 14px; /* Yazı boyutu */
+  transition: background-color 0.3s ease;
+  border: 1px solid #ddd; /* Hücreler arasında sınır */
+  word-wrap: break-word; /* Uzun kelimelerin taşmasını engeller */
+}
+
+.calendar-table th {
+  background-color: #ff0000;
+  font-weight: bold;
+  font-size: 13px; /* Başlık yazı boyutunu küçülterek hizalamayı düzelt */
+  padding: 10px 5px; /* Yatayda daha az padding */
+}
+
+.calendar-table td:hover {
+  background-color: #a18a78;
+  border-radius: 5px;
+}
+
+.calendar-table th:nth-child(4),
+.calendar-table th:nth-child(5) {
+  word-break: keep-all; /* Yazıların bölünmesini önler */
+  white-space: nowrap; /* Yazıyı satır içinde tutar */
+}
+
+.empty {
+  background-color: #f9f9f9;
+}
+
+.calendar-day {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.calendar-day.special-day {
+  background-color: #ffcc00;
+  color: #fff;
+}
+
+.calendar-day.special-day:hover {
+  background-color: #e6b800;
+}
+
+.calendar-day.selected {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.calendar-day.selected:hover {
+  background-color: #45a049;
+}
+
+.special-day {
+  background-color: #ffcc00; /* Özel gün için sarı arka plan */
+  font-weight: bold;
+}
+.add-special-day {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.add-special-day input,
+.add-special-day button {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+
+.add-special-day {
+  width: 90%;
+  max-width: 500px;
+}
+
+#events-side {
+  background-color: #f8f9fa; /* Hafif gri arka plan */
+  padding: 20px;
+  text-align: left;
+}
+
+#events-list {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+

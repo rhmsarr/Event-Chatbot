@@ -1,0 +1,270 @@
+@{Layout= "";}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="\lib\bootstrap\dist\css\theme.bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="css\chat.css" rel="stylesheet">
+
+    <title>Chat with our bot! </title>
+</head>
+<body>
+<!-- Button trigger modal -->
+ 
+  <div class="modal" id="modal1" aria-hidden="true" aria-labelledby="modal1" tabindex="-1" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            
+            <div class="modal-body d-flex flex-column justify-content-between">
+                
+              <h1 style="text-align: center; ">What should we call you?</h1>
+    
+              <div class="d-flex justify-content-center flex-grow-1">
+                <input class="form-control form-control-lg" type="text">
+
+              </div>
+            </div>
+            <span style="margin: auto;">
+                <i class="bi bi-circle-fill h6"></i>
+                <i class="bi bi-circle h6"></i>
+                <i class="bi bi-circle h6"></i>
+                <button class="btn" data-bs-target="#modal2" data-bs-toggle="modal">
+                    <i class="bi bi-caret-right h2" id="left-arrow">
+                    </i>
+                </button>
+                
+              
+              </span>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modal2" aria-hidden="true" aria-labelledby="modalLabel2" tabindex="-1" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
+          <div class="modal-content">
+            
+            <div class="modal-body">
+              <h1>What do you like?</h1>
+              <input type="checkbox" class="btn-check" id="Technology" autocomplete="off">
+              <label class="btn btn-lg interest btn-primary" for="Technology">Technology</label>
+              <input type="checkbox" class="btn-check" id="Arts" autocomplete="off">
+              <label class="btn btn-lg interest btn-primary" for="Arts">Arts</label>
+              <input type="checkbox" class="btn-check" id="Science" autocomplete="off">
+              <label class="btn btn-lg interest btn-primary" for="Science">Science</label> 
+              <input type="checkbox" class="btn-check" id="PoliticalScience" autocomplete="off">
+              <label class="btn btn-lg interest btn-primary" for="PoliticalScience">Political Science</label> 
+              <input type="checkbox" class="btn-check" id="Economy" autocomplete="off">
+              <label class="btn btn-lg interest btn-primary" for="Economy">Economy</label>
+              <input type="checkbox" class="btn-check" id="Business" autocomplete="off">
+              <label class="btn btn-lg interest btn-primary" for="Business">Business</label>
+              <input type="checkbox" class="btn-check" id="HealthSciences" autocomplete="off">
+              <label class="btn btn-lg interest btn-primary" for="HealthSciences">Health Sciences</label>
+              <input type="checkbox" class="btn-check" id="Sports" autocomplete="off">
+              <label class="btn btn-lg interest btn-primary" for="Sports">Sports</label>
+              <input type="checkbox" class="btn-check" id="Theology" autocomplete="off">
+              <label class="btn btn-lg interest btn-primary" for="Theology">Theology</label>
+              <input type="checkbox" class="btn-check" id="Engineering" autocomplete="off">
+              <label class="btn btn-lg interest btn-primary" for="Engineering">Engineering</label>
+
+
+            </div>
+            <span style="margin: auto;">
+                <button class="btn" data-bs-target="#modal1" data-bs-toggle="modal">
+                    <i class="bi  bi-caret-left h2"></i>
+                </button>
+                <a data-bs-target="#modal1" data-bs-toggle="modal">
+                    <i class="bi bi-circle-fill h6"></i>
+                </a>
+                <i class="bi bi-circle-fill h6"></i>
+                <i class="bi bi-circle h6"></i>
+                <button class="btn" data-bs-target="#modal3" data-bs-toggle="modal">
+                    <i class="bi bi-caret-right h2" id="left-arrow">
+                    </i>
+                </button>
+              </span>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal-xl" id="modal3" tabindex="-1" aria-labelledby="modal3" aria-hidden="true" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            
+            <div class="modal-body">
+              <h1>When are you free?</h1>
+              <div class="container d-flex align-items-center justify-content-center">
+              <div class="row w-100 justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 row-cols-xl-4 " >
+               
+                  <div class="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center text-center">
+                    <div>
+                      <h3>Monday</h3>
+                      <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group" >
+                        <input type="checkbox" class="btn-check" id="MondayAM" autocomplete="off">
+                        <label class="btn btn-primary" for="MondayAM">AM</label>
+                        <input type="checkbox" class="btn-check" id="MondayPM" autocomplete="off">
+                        <label class="btn btn-primary" for="MondayPM">PM</label>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center text-center">
+                    <div>
+                      <h3>Tuesday</h3>
+                      <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group"  >
+                        <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group" >
+                          <input type="checkbox" class="btn-check" id="TuesdayAM" autocomplete="off">
+                          <label class="btn btn-primary" for="TuesdayAM">AM</label>
+                          <input type="checkbox" class="btn-check" id="TuesdayPM" autocomplete="off">
+                          <label class="btn btn-primary" for="TuesdayPM">PM</label>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                    <div>
+                      <h3>Wednesday</h3>
+                        <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group" >
+                          <input type="checkbox" class="btn-check" id="WednesdayAM" autocomplete="off">
+                          <label class="btn btn-primary" for="WednesdayAM">AM</label>
+                          <input type="checkbox" class="btn-check" id="WednesdayPM" autocomplete="off">
+                          <label class="btn btn-primary" for="WednesdayPM">PM</label>
+                        </div>
+                    </div>
+                    
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                    <div>
+                      <h3>Thursday</h3>
+                      <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group" >
+                        <input type="checkbox" class="btn-check" id="ThursdayAM" autocomplete="off">
+                        <label class="btn btn-primary" for="ThursdayAM">AM</label>
+                        <input type="checkbox" class="btn-check" id="ThursdayPM" autocomplete="off">
+                        <label class="btn btn-primary" for="ThursdayPM">PM</label>
+                      </div>
+                    </div>
+                    
+                  </div>
+              
+                  <div class="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                    <div>
+                      <h3>Friday</h3>
+                      <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group" >
+                        <input type="checkbox" class="btn-check" id="FridayAM" autocomplete="off">
+                        <label class="btn btn-primary" for="FridayAM">AM</label>
+                        <input type="checkbox" class="btn-check" id="FridayPM" autocomplete="off">
+                        <label class="btn btn-primary" for="FridayPM">PM</label>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                    <div>
+                      <h3>Saturday</h3>
+                      <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group" >
+                        <input type="checkbox" class="btn-check" id="SaturdayAM" autocomplete="off">
+                        <label class="btn btn-primary" for="SaturdayAM">AM</label>
+                        <input type="checkbox" class="btn-check" id="SaturdayPM" autocomplete="off">
+                        <label class="btn btn-primary" for="SaturdayPM">PM</label>
+                      </div>
+                    </div>
+                    
+                  </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                  <div>
+                    <h3>Sunday</h3>
+                    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group" >
+                      <input type="checkbox" class="btn-check" id="SundayAM" autocomplete="off">
+                      <label class="btn btn-primary" for="SundayAM">AM</label>
+                      <input type="checkbox" class="btn-check" id="SundayPM" autocomplete="off">
+                      <label class="btn btn-primary" for="SundayPM">PM</label>
+                    </div>
+                  </div>
+                    
+                  </div>
+              </div>
+              </div>
+                  
+            </div>  
+                
+            
+            <span style="margin: auto;">
+              <button class="btn" data-bs-target="#modal2" data-bs-toggle="modal">
+                  <i class="bi  bi-caret-left h2"></i>
+              </button>
+              <a data-bs-target="#modal1" data-bs-toggle="modal">
+                  <i class="bi bi-circle-fill h6"></i>
+              </a>
+              <a data-bs-target="#modal2" data-bs-toggle="modal">
+                <i class="bi bi-circle-fill h6"></i>
+              </a>
+              <i class="bi bi-circle-fill h6"></i>
+              <button type="submit" class="btn" data-bs-target="#modal3" data-bs-toggle="modal">
+                  <i class="bi bi-caret-right h2" id="left-arrow">
+                  </i>
+                </button>
+              </span>
+          </div>
+        </div>
+      </div>
+ 
+    
+      
+
+      <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <i class="bi bi-house"></i> Home
+            </a>
+          
+            <i class="bi bi-pencil-square h3" data-bs-target="#modal1" data-bs-toggle="modal"></i>
+
+        </div>
+      </nav>
+
+      <div id="chat">
+        <div class="text-bubble bot">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, iure nulla? Soluta vero tempora commodi fugit provident! Nemo eaque deserunt voluptas, explicabo dolorem quaerat aliquam porro amet nulla sit modi.</p>
+        </div>
+        <div class="text-bubble user">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae quam nesciunt aliquid. Possimus, eaque facilis illo recusandae ipsa reiciendis iste numquam distinctio incidunt magni, esse fugit neque laborum modi quod.</p>
+        </div>
+        <div class="text-bubble bot">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, iure nulla? Soluta vero tempora commodi fugit provident! Nemo eaque deserunt voluptas, explicabo dolorem quaerat aliquam porro amet nulla sit modi.</p>
+        </div>
+        <div class="text-bubble user">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae quam nesciunt aliquid. Possimus, eaque facilis illo recusandae ipsa reiciendis iste numquam distinctio incidunt magni, esse fugit neque laborum modi quod.</p>
+        </div>
+        <div class="text-bubble bot">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, iure nulla? Soluta vero tempora commodi fugit provident! Nemo eaque deserunt voluptas, explicabo dolorem quaerat aliquam porro amet nulla sit modi.</p>
+        </div>
+        <div class="text-bubble user">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae quam nesciunt aliquid. Possimus, eaque facilis illo recusandae ipsa reiciendis iste numquam distinctio incidunt magni, esse fugit neque laborum modi quod.</p>
+        </div>
+        <div class="text-bubble bot">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, iure nulla? Soluta vero tempora commodi fugit provident! Nemo eaque deserunt voluptas, explicabo dolorem quaerat aliquam porro amet nulla sit modi.</p>
+        </div>
+        <div class="text-bubble user">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae quam nesciunt aliquid. Possimus, eaque facilis illo recusandae ipsa reiciendis iste numquam distinctio incidunt magni, esse fugit neque laborum modi quod.</p>
+        </div>
+        <div class="text-bubble pad"></div>
+        
+        <div id="send" class="d-flex justify-content-center align-items-center">
+          <form>
+         
+              <textarea name="" id=""></textarea>
+              <button type="submit"  id="submit" class="btn btn-sm">
+                <i class="bi bi-arrow-up-circle h1"></i>
+              </button>
+    
+    
+            
+          </form>
+        </div>
+      </div>
+      
+    
+</body>
+</html>
