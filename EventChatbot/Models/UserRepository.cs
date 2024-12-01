@@ -4,17 +4,33 @@ namespace EventChatbot.Models{
 
         public static User user { get; set; }
         public static void SaveUser(User u){
+            user = new User();
             user = u;
         }
         public static void InitializeWeek(){
             
-            user.Availability[0].Name = "Monday";
-            user.Availability[1].Name = "Tuesday";
-            user.Availability[2].Name = "Wednesday";
-            user.Availability[3].Name = "Thursday";
-            user.Availability[4].Name = "Friday";
-            user.Availability[5].Name = "Saturday";
-            user.Availability[6].Name = "Sunday";
+            if(user.Availability.Monday == null){
+                user.Availability.Monday = new Day();
+            }
+            if(user.Availability.Tuesday == null){
+                user.Availability.Tuesday = new Day();
+            }
+            if(user.Availability.Wednesday == null){
+                user.Availability.Wednesday = new Day();
+            }
+            if(user.Availability.Thursday == null){
+                user.Availability.Thursday = new Day();
+            }
+            if(user.Availability.Friday == null){
+                user.Availability.Friday = new Day();
+            }
+            if(user.Availability.Saturday == null){
+                user.Availability.Saturday = new Day();
+            } 
+            if(user.Availability.Sunday == null){
+                user.Availability.Sunday = new Day();
+            }
+          
         }
         
     }

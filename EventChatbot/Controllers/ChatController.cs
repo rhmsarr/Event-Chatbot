@@ -19,7 +19,6 @@ namespace EventChatbot.Controllers{
             //send model to chatgpt
             
             UserRepository.SaveUser(model);
-            //UserRepository.InitializeWeek();
             return View("test", model);//return the view with chatgpt's reply
 
         }
