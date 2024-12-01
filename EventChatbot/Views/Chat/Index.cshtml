@@ -1,4 +1,4 @@
-@{Layout= "";}
+@{Layout= "_Layout";}
 @model User
 
 
@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="\lib\bootstrap\dist\css\theme.bootstrap.min.css" rel="stylesheet">
+    <link href="\lib\bootstrap\dist\css\bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="css\chat.css" rel="stylesheet">
@@ -15,8 +15,9 @@
     <title>Chat with our bot! </title>
 </head>
 <body>
-<!-- Button trigger modal -->
-
+@section ModifyPreferences{
+  <i class="bi bi-pencil-square h3" data-bs-target="#modal1" data-bs-toggle="modal"></i>
+}
 <form asp-action="Index" method="post">
   <!-- First modal, take username -->
       <div class="modal" id="modal1" aria-hidden="true" aria-labelledby="modal1" tabindex="-1" data-bs-backdrop="static">
@@ -222,16 +223,7 @@
     
       
 
-      <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <i class="bi bi-house"></i> Home
-            </a>
-          
-            <i class="bi bi-pencil-square h3" data-bs-target="#modal1" data-bs-toggle="modal"></i>
-
-        </div>
-      </nav>
+      
 
       <div id="chat">
         <div class="text-bubble bot">

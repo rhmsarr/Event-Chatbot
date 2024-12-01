@@ -153,10 +153,6 @@
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\33780\\Desktop\\ai\\EventChatbot\\EventChatbot\\wwwroot\\lib\\bootstrap\\dist\\css\\theme.bootstrap.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\theme.bootstrap.min.css"
-    },
-    {
       "Id": "C:\\Users\\33780\\Desktop\\ai\\EventChatbot\\EventChatbot\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
