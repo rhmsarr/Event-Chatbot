@@ -16,7 +16,6 @@
 </head>
 <body>
 <!-- Button trigger modal -->
-
 <form asp-action="Index" method="post">
   <!-- First modal, take username -->
       <div class="modal" id="modal1" aria-hidden="true" aria-labelledby="modal1" tabindex="-1" data-bs-backdrop="static">
@@ -102,12 +101,11 @@
               <h1>When are you free?</h1>
               <div class="container d-flex align-items-center justify-content-center">
               <div class="row w-100 justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 row-cols-xl-4 " >
-                 
                
                   <div class="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center text-center">
                     <div>
                       <h3>Monday</h3>
-                      <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group" name="Availability[0].Name" value="monday" >
+                      <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group" >
                         <input type="checkbox" class="btn-check" id="MondayAM" autocomplete="off" name="Availability[0].AM" value="true">
                         <label class="btn btn-primary" for="MondayAM">AM</label>
                         <input type="checkbox" class="btn-check" id="MondayPM" autocomplete="off" name="Availability[0].PM" value="true">
@@ -119,7 +117,7 @@
                   <div class="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center align-items-center text-center">
                     <div>
                       <h3>Tuesday</h3>
-                      <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group" name="Availability[1].Name" value="tuesday" >
+                      <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group"  >
                         <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group" >
                           <input type="checkbox" class="btn-check" id="TuesdayAM" autocomplete="off" name="Availability[1].AM" value="true">
                           <label class="btn btn-primary" for="TuesdayAM">AM</label>
@@ -133,7 +131,7 @@
                   <div class="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
                     <div>
                       <h3>Wednesday</h3>
-                        <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group" name="Availability[2].Name" value="wednesday" >
+                        <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group" >
                           <input type="checkbox" class="btn-check" id="WednesdayAM" autocomplete="off" name="Availability[2].AM" value="true">
                           <label class="btn btn-primary" for="WednesdayAM">AM</label>
                           <input type="checkbox" class="btn-check" id="WednesdayPM" autocomplete="off" name="Availability[2].PM" value="true">
@@ -145,7 +143,7 @@
                   <div class="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
                     <div>
                       <h3>Thursday</h3>
-                      <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group" name="Availability[3].Name" value="thursday">
+                      <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group" >
                         <input type="checkbox" class="btn-check" id="ThursdayAM" autocomplete="off" name="Availability[3].AM" value="true">
                         <label class="btn btn-primary" for="ThursdayAM">AM</label>
                         <input type="checkbox" class="btn-check" id="ThursdayPM" autocomplete="off" name="Availability[3].PM" value="true">
@@ -158,7 +156,7 @@
                   <div class="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
                     <div>
                       <h3>Friday</h3>
-                      <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group" name="Availability[4].Name" value="friday">
+                      <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group" >
                         <input type="checkbox" class="btn-check" id="FridayAM" autocomplete="off" name="Availability[4].AM" value="true">
                         <label class="btn btn-primary" for="FridayAM">AM</label>
                         <input type="checkbox" class="btn-check" id="FridayPM" autocomplete="off" name="Availability[4].PM" value="true">
@@ -170,7 +168,7 @@
                   <div class="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
                     <div>
                       <h3>Saturday</h3>
-                      <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group" name="Availability[5].Name" value="saturday">
+                      <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group" >
                         <input type="checkbox" class="btn-check" id="SaturdayAM" autocomplete="off" name="Availability[5].AM" value="true">
                         <label class="btn btn-primary" for="SaturdayAM">AM</label>
                         <input type="checkbox" class="btn-check" id="SaturdayPM" autocomplete="off" name="Availability[5].PM" value="true">
@@ -179,10 +177,10 @@
                     </div>
                     
                   </div>
-                  <div class="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
                   <div>
                     <h3>Sunday</h3>
-                    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group" name="Availability[6].Name" value="sunday">
+                    <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group" >
                       <input type="checkbox" class="btn-check" id="SundayAM" autocomplete="off" name="Availability[6].AM" value="true">
                       <label class="btn btn-primary" for="SundayAM">AM</label>
                       <input type="checkbox" class="btn-check" id="SundayPM" autocomplete="off" name="Availability[6].PM" value="true">
@@ -191,7 +189,6 @@
                   </div>
                     
                   </div>
-                   
               </div>
               </div>
                   
@@ -273,19 +270,12 @@
           </form>
         </div>
       </div>
-
-      @{
-        var OpenModalOnLoad = ViewData["OpenModal"] as bool? ??false;
-        if(OpenModalOnLoad){
-          <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                var myModal = new bootstrap.Modal(document.getElementById('modal1'));
-                myModal.show();  // This opens the modal
-            });
-        </script>
-      
-        }
-      }
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var myModal = new bootstrap.Modal(document.getElementById('modal1'));
+            myModal.show();  // This opens the modal
+        });
+    </script>
       
     
 </body>

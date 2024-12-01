@@ -1,0 +1,11 @@
+@model User
+
+<p>@Model.Name</p>
+@foreach(string interest in @Model.Interests){
+    <p>@interest</p>
+}
+@foreach(Day d in @Model.Availability){
+    <p>@d.Name</p>
+    <p>@d.AM</p>
+    <p>@d.PM</p>
+}
