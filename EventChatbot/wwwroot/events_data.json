@@ -1,0 +1,80 @@
+[
+    {
+      "date": "2024-11-20",
+      "label": "Tea & Talk: Fevzi Can Küçükislamoğlu",
+      "location": "Ford Otosan",
+      "time": "16:30",
+      "description": "Deneyimli Endüstri Mühendisleri Günleri'ne hız kesmeden devam ediyoruz! Bu hafta Ford Otosan’da Kapasite ve Verimlilik Mühendisi Fevzi Can Küçükislamoğlu bizlerle olacak. Kendisi bizlere öğrencilik yıllarından profesyonel iş hayatına uzanan yolculuğunu ve bu süreçte kazandığı deneyimleri paylaşacak."
+    },
+    {
+      "date": "2024-11-16",
+      "label": "Dijital Pazarlama Eğitimi: Pelda Yalçınkaya",
+      "location": "Google Meet",
+      "time": "20:00",
+      "description": "Dijital Pazarlama Uzmanı Pelda Yalçınkaya tarafından gerçekleşetirilecek eğitime katılarak siz de dijital dünyada marka oluşturma konularında yeni bilgiler edinebilirsiniz. Eğitimimiz sertifikalıdır."
+    },
+    {
+      "date": "2024-11-13",
+      "label": "Teknik Gezi: Yazaki",
+      "location": "Yazaki Firması",
+      "time": "12:45",
+      "description": "Otomotiv sektörünün önde gelen yan sanayi üreticilerinden “Yazaki” firmasını ziyaret ederek üretim bantlarını yakından görme fırsatı elde edeceğiz. Teknik gezimiz kontenjanla sınırlı olup, kayıtlarımız yarın 11.00’dan itibaren M5 binasındaki kulüp odamızdan alınacaktır."
+    },
+    {
+      "date": "2024-11-13",
+      "label": "Tea & Talk: Oğuzhan Yağcı & Neslihan Yağcı",
+      "location": "LatteCup",
+      "time": "16:30",
+      "description": "Sakarya Üniversitesi Endüstri Mühendisliği bölümü mezunlarımızdan Oğuzhan Yağcı ve Neslihan Yağcı deneyimlerini aktarmak ve sorularınızı cevaplamak üzere bizlerle olacaklar."
+    },
+    {
+      "date": "2024-11-12",
+      "label": "Eğitim: Mehmet Dayıoğlu",
+      "location": "M5 - 5103",
+      "time": "14:00",
+      "description": "Mühendislik Gelişim Okulu’nun Kurucu & Eğitmeni ve Fuska Natural Spring Water Fabrika Müdürü Sayın Mehmet Dayıoğlu temel mühendislik gereksinimleri ve deneyimlerini aktarmak üzere bizlerle olacaktır."
+    },
+    {
+      "date": "2024-11-06",
+      "label": "Yenilikçi Zihinler: Kariyer Şifreleri",
+      "location": "Kültür ve Kongre Merkezi",
+      "time": "14:00",
+      "description": "Sektörün önde gelen firmalarından deneyimli isimler ile buluşup kariyerinizde fark yaratacak bilgiler edinmek ve onlara aklınızdaki soruları sorabileceğiniz bu etkinliğe katılın!"
+    },
+    {
+      "date": "2024-10-27",
+      "label": "Eğitim: Etkili LinkedIn Kullanımı",
+      "location": "Google Meet",
+      "time": "19:00",
+      "description": "Tekinder Genel Başkanı Sayın Dr. Mehmet Selçuk Batal’ın katılımıyla gerçekleştirilecek olan “Etkili LinkedIn Kullanımı” eğitimiyle, iş dünyasında kendinizi daha iyi ifade etmenin yollarını öğrenip, kariyer fırsatlarınızı genişletebilirsiniz."
+    },
+    {
+      "date": "2024-10-23",
+      "label": "Tea & Talk: Salim Aydın",
+      "location": "LatteCup",
+      "time": "15:15",
+      "description": "Yeni dönemdeki ilk Tea & Talk etkinliğimizde Deneyimli Endüstri Mühendisleri (DEM) temalı buluşmamızda İstanbul Teknik Üniversitesi endüstri mühendisi mezunlarından sayın Salim Aydın bizlerle olacak."
+    },
+    {
+      "date": "2024-10-15",
+      "label": "Zirve 23: Sesini Duyur!",
+      "location": "Volkswagen Arena",
+      "time": "TBD",
+      "description": "Bu yıl Zirve 23, 17 Ekim Perşembe günü Volkswagen Arena’da gerçekleşecek. Şahitlik ettiğimiz pek çok küresel sorun karşısında Zirve 23 sahnesinde 'Sesini Duyur!' temasıyla bir araya geliyoruz."
+    },
+    {
+      "date": "2024-10-08",
+      "label": "Bursa Model Fabrika Teknik Gezisi",
+      "location": "Bursa Model Fabrika",
+      "time": "11:30",
+      "description": "İnovasyon ve endüstri 4.0’ın kalbi, üretimde geleceği şekillendiren yenilikçi üretim teknolojileri, dijital dönüşüm ve akıllı üretim konularında öncü olan Bursa Model Fabrika’yı ziyaret edeceğiz."
+    },
+    {
+      "date": "2024-03-22",
+      "label": "Mesleğe Hazırlık: Ahmet İlhan Düzgün",
+      "location": "M5 Binası 5012 Nolu Sınıf",
+      "time": "14:00",
+      "description": "Alanında uzman eğitmen Ahmet İlhan Düzgün bizlere “Mesleğe Hazırlık” eğitimi verecektir. 5 hafta boyunca her cuma saat 14:00’te gerçekleşecek olan bu uzun soluklu eğitim sayesinde mesleğe adım atmadan önce hazırlığınızı yapabilirsiniz."
+    }
+  ]
+  
