@@ -9,51 +9,51 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EventChatbot
 build_property.RootNamespace = EventChatbot
-build_property.ProjectDir = c:\Users\beyza\OneDrive\Desktop\EventChatbot\Event-Chatbot\EventChatbot\
+build_property.ProjectDir = C:\Users\33780\Desktop\ai\EventChatbot\EventChatbot\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\beyza\OneDrive\Desktop\EventChatbot\Event-Chatbot\EventChatbot
+build_property.MSBuildProjectDirectory = C:\Users\33780\Desktop\ai\EventChatbot\EventChatbot
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/beyza/OneDrive/Desktop/EventChatbot/Event-Chatbot/EventChatbot/Views/Chat/Index.cshtml]
+[C:/Users/33780/Desktop/ai/EventChatbot/EventChatbot/Views/Chat/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/beyza/OneDrive/Desktop/EventChatbot/Event-Chatbot/EventChatbot/Views/Chat/IndexModal.cshtml]
+[C:/Users/33780/Desktop/ai/EventChatbot/EventChatbot/Views/Chat/IndexModal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhdFxJbmRleE1vZGFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/beyza/OneDrive/Desktop/EventChatbot/Event-Chatbot/EventChatbot/Views/Chat/test.cshtml]
+[C:/Users/33780/Desktop/ai/EventChatbot/EventChatbot/Views/Chat/test.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhdFx0ZXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/beyza/OneDrive/Desktop/EventChatbot/Event-Chatbot/EventChatbot/Views/Home/Index.cshtml]
+[C:/Users/33780/Desktop/ai/EventChatbot/EventChatbot/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/beyza/OneDrive/Desktop/EventChatbot/Event-Chatbot/EventChatbot/Views/Home/Privacy.cshtml]
+[C:/Users/33780/Desktop/ai/EventChatbot/EventChatbot/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/beyza/OneDrive/Desktop/EventChatbot/Event-Chatbot/EventChatbot/Views/Shared/Error.cshtml]
+[C:/Users/33780/Desktop/ai/EventChatbot/EventChatbot/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/beyza/OneDrive/Desktop/EventChatbot/Event-Chatbot/EventChatbot/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/33780/Desktop/ai/EventChatbot/EventChatbot/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/beyza/OneDrive/Desktop/EventChatbot/Event-Chatbot/EventChatbot/Views/_ViewImports.cshtml]
+[C:/Users/33780/Desktop/ai/EventChatbot/EventChatbot/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/beyza/OneDrive/Desktop/EventChatbot/Event-Chatbot/EventChatbot/Views/_ViewStart.cshtml]
+[C:/Users/33780/Desktop/ai/EventChatbot/EventChatbot/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/beyza/OneDrive/Desktop/EventChatbot/Event-Chatbot/EventChatbot/Views/Shared/_Layout.cshtml]
+[C:/Users/33780/Desktop/ai/EventChatbot/EventChatbot/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-tv1j034slc

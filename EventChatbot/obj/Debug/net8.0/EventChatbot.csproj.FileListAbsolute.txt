@@ -71,3 +71,14 @@ C:\Users\beyza\OneDrive\Desktop\EventChatbot\Event-Chatbot\EventChatbot\bin\Debu
 C:\Users\beyza\OneDrive\Desktop\EventChatbot\Event-Chatbot\EventChatbot\obj\Debug\net8.0\EventChatbot.csproj.AssemblyReference.cache
 C:\Users\beyza\OneDrive\Desktop\EventChatbot\Event-Chatbot\EventChatbot\obj\Debug\net8.0\EventCha.24D54FCA.Up2Date
 c:\Users\beyza\OneDrive\Desktop\EventChatbot\Event-Chatbot\EventChatbot\bin\Debug\net8.0\venv\Lib\site-packages\python_magic_bin-0.4.14.dist-info\metadata.json
+C:\Users\33780\Desktop\ai\EventChatbot\EventChatbot\bin\Debug\net8.0\venv\Lib\site-packages\python_magic_bin-0.4.14.dist-info\metadata.json
+C:\Users\33780\Desktop\ai\EventChatbot\EventChatbot\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\33780\Desktop\ai\EventChatbot\EventChatbot\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\33780\Desktop\ai\EventChatbot\EventChatbot\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\33780\Desktop\ai\EventChatbot\EventChatbot\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\33780\Desktop\ai\EventChatbot\EventChatbot\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\33780\Desktop\ai\EventChatbot\EventChatbot\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\33780\Desktop\ai\EventChatbot\EventChatbot\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\33780\Desktop\ai\EventChatbot\EventChatbot\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\33780\Desktop\ai\EventChatbot\EventChatbot\obj\Debug\net8.0\EventChatbot.csproj.AssemblyReference.cache
+C:\Users\33780\Desktop\ai\EventChatbot\EventChatbot\obj\Debug\net8.0\EventCha.24D54FCA.Up2Date
