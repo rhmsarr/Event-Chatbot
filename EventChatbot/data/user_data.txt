@@ -1,30 +1,28 @@
 {
-  "Name": "Saliha",
+  "Name": "ffsd",
   "Interests": [
-    "HealthSciences",
-    "Sports",
     "Theology"
   ],
   "Availability": {
     "Monday": {
-      "AM": true,
+      "AM": false,
       "PM": false
     },
     "Tuesday": {
-      "AM": false,
-      "PM": false
+      "AM": true,
+      "PM": true
     },
     "Wednesday": {
       "AM": false,
       "PM": false
     },
     "Thursday": {
-      "AM": true,
+      "AM": false,
       "PM": false
     },
     "Friday": {
       "AM": false,
-      "PM": true
+      "PM": false
     },
     "Saturday": {
       "AM": false,

@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="css\chat.css" rel="stylesheet">
+   
 
     <title>Chat with our bot! </title>
 </head>
@@ -221,37 +222,15 @@
 </form>
 
 
-      <div id="chat">
-        <div class="text-bubble bot">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, iure nulla? Soluta vero tempora commodi fugit provident! Nemo eaque deserunt voluptas, explicabo dolorem quaerat aliquam porro amet nulla sit modi.</p>
-        </div>
-        <div class="text-bubble user">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae quam nesciunt aliquid. Possimus, eaque facilis illo recusandae ipsa reiciendis iste numquam distinctio incidunt magni, esse fugit neque laborum modi quod.</p>
-        </div>
-        <div class="text-bubble bot">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, iure nulla? Soluta vero tempora commodi fugit provident! Nemo eaque deserunt voluptas, explicabo dolorem quaerat aliquam porro amet nulla sit modi.</p>
-        </div>
-        <div class="text-bubble user">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae quam nesciunt aliquid. Possimus, eaque facilis illo recusandae ipsa reiciendis iste numquam distinctio incidunt magni, esse fugit neque laborum modi quod.</p>
-        </div>
-        <div class="text-bubble bot">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, iure nulla? Soluta vero tempora commodi fugit provident! Nemo eaque deserunt voluptas, explicabo dolorem quaerat aliquam porro amet nulla sit modi.</p>
-        </div>
-        <div class="text-bubble user">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae quam nesciunt aliquid. Possimus, eaque facilis illo recusandae ipsa reiciendis iste numquam distinctio incidunt magni, esse fugit neque laborum modi quod.</p>
-        </div>
-        <div class="text-bubble bot">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, iure nulla? Soluta vero tempora commodi fugit provident! Nemo eaque deserunt voluptas, explicabo dolorem quaerat aliquam porro amet nulla sit modi.</p>
-        </div>
-        <div class="text-bubble user">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae quam nesciunt aliquid. Possimus, eaque facilis illo recusandae ipsa reiciendis iste numquam distinctio incidunt magni, esse fugit neque laborum modi quod.</p>
-        </div>
-        <div class="text-bubble pad"></div>
+    <div id="chat">
+       
+    </div>
+        <div class=" pad"></div>
         
         <div id="send" class="d-flex justify-content-center align-items-center">
           <form>
          
-              <textarea name="" id=""></textarea>
+              <textarea name="" id="text"></textarea>
               <button type="submit"  id="submit" class="btn btn-sm">
                 <i class="bi bi-arrow-up-circle h1"></i>
               </button>
@@ -275,6 +254,41 @@
         }
       }
       
+      <script>
+          
+            const chat = document.getElementById('chat');
+            const chatInput = document.getElementById('text');
+            const submitButton = document.getElementById('submit');
+
+            function addChatBubble(text)
+            {
+                if(text.trim() === '') return;
+
+                const chatBubble = document.createElement('div');
+                chatBubble.className = 'text-bubble user';
+                chatBubble.textContent = text;
+
+                chat.prepend(chatBubble);
+                chat.scrollTop = chat.scrollHeight;
+                chatInput.value = '';
+            }
+
+            chatInput.addEventListener('keypress', (event) =>
+            {
+                if(event.key === 'Enter')
+                {
+                    addChatBubble(chatInput.value);
+                }
+            });
+
+            submitButton.addEventListener('click', () =>
+            {
+                event.preventDefault();
+                addChatBubble(chatInput.value);
+            });
+
+      </script>
+
     
 </body>
 </html>
