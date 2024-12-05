@@ -1,7 +1,7 @@
 {
-  "Name": "nm",
+  "Name": "ffsd",
   "Interests": [
-    "Engineering"
+    "Theology"
   ],
   "Availability": {
     "Monday": {
@@ -9,8 +9,8 @@
       "PM": false
     },
     "Tuesday": {
-      "AM": false,
-      "PM": false
+      "AM": true,
+      "PM": true
     },
     "Wednesday": {
       "AM": false,
@@ -29,7 +29,7 @@
       "PM": false
     },
     "Sunday": {
-      "AM": true,
+      "AM": false,
       "PM": false
     }
   }
