@@ -23,7 +23,7 @@ namespace EventChatbot.Controllers{
             // Create a new anonymous object to structure the user data.
             if(ModelState.IsValid)
             {
-                var userData = new
+                /*var userData = new
                 {
                     Name = model.Name,  // Include the user's name from the model.
                     Interests = model.Interests,  // Include the user's interests from the model.
@@ -46,7 +46,9 @@ namespace EventChatbot.Controllers{
                 string filepath = Path.Combine(Directory.GetCurrentDirectory(), "data/user_data.txt");
 
                 // Write the JSON data to the specified file path.
-                System.IO.File.WriteAllText(filepath, json);
+                System.IO.File.WriteAllText(filepath, json);*/
+
+                UserRepository.saveUserJson(model);
 
                 // Save the user model to a repository (assumed to handle persistence or further processing).
                 UserRepository.SaveUser(model);
