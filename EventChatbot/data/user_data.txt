@@ -1,7 +1,7 @@
 {
-  "Name": "ffsd",
+  "Name": "jk",
   "Interests": [
-    "Theology"
+    "PoliticalScience"
   ],
   "Availability": {
     "Monday": {
@@ -9,11 +9,11 @@
       "PM": false
     },
     "Tuesday": {
-      "AM": true,
-      "PM": true
+      "AM": false,
+      "PM": false
     },
     "Wednesday": {
-      "AM": false,
+      "AM": true,
       "PM": false
     },
     "Thursday": {
