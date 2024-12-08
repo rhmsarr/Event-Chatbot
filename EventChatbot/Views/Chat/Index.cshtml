@@ -26,9 +26,9 @@
           <div class="modal-content">
             
             <div class="modal-body d-flex flex-column justify-content-between">
-                
+              
               <h1 style="text-align: center; ">What should we call you?</h1>
-    
+              <span asp-validation-for="Name" style="width: 100%; text-align: center; font-size: 2rem;"></span>
               <div class="d-flex justify-content-center flex-grow-1">
                 <input class="form-control form-control-lg" type="text" asp-for="Name">
 
@@ -55,6 +55,10 @@
             
             <div class="modal-body">
               <h1>What do you like?</h1>
+              <div class="modal-body d-flex flex-column justify-content-between">
+                <span asp-validation-for="Interests" style="width: 100%; text-align: center; font-size: 2rem;"></span>
+              </div>
+              
               <input type="checkbox" class="btn-check" id="Technology" autocomplete="off" name="Interests" value="Technology">
               <label class="btn btn-lg interest btn-primary" for="Technology">Technology</label>
               <input type="checkbox" class="btn-check" id="Arts" autocomplete="off" name="Interests" value="Arts">
@@ -95,14 +99,18 @@
           </div>
         </div>
       </div>
-  <!-- Third modal,# take user availability -->
+  <!-- Third modal, take user availability -->
       <div class="modal modal-xl" id="modal3" tabindex="-1" aria-labelledby="modal3" aria-hidden="true" data-bs-backdrop="static">
         <div class="modal-dialog modal-dialog-scrollable">
           <div class="modal-content">
             
             <div class="modal-body">
-              <h1>When are you free?</h1>
-              <div class="container d-flex align-items-center justify-content-center">
+              <h1 id="h1-modal3">When are you free?</h1>
+              <div class="modal-body d-flex flex-column justify-content-between">
+                <span asp-validation-for="Availability" style="width: 100%; text-align: center; font-size: 2rem;"></span>
+              </div>
+              
+              <div class="container d-flex align-items-center justify-content-center"  style="padding-top: 10px !important;">
               <div class="row w-100 justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 row-cols-xl-4 " >
                  
                

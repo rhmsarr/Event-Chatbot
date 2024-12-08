@@ -1,11 +1,16 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace EventChatbot.Models{
 
-    public class User{
-        public string Name { get; set; } = string.Empty;
-        public List<string>? Interests { get; set; }
 
+    public class User{
+
+        [Required(ErrorMessage = "Please enter your name")]
+        public string Name { get; set; } = string.Empty;
+        [Required(ErrorMessage="Select at least one")]
+        public List<string>? Interests { get; set; }
+        [Required(ErrorMessage="Select at least one")]
         public Week? Availability {get; set;}
 
-        //public Day[]? Availability { get; set; }
     }
 }
