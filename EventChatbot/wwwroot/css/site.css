@@ -164,6 +164,18 @@ html {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+/* styles.css */
+.special-day.static {
+  background-color: #ff0c0c; /* Static özel günler için */
+  color: #000;
+  font-weight: bold;
+}
+
+.special-day.dynamic {
+  background-color: #87CEEB; /* Dynamic özel günler için */
+  color: #000;
+  font-weight: bold;
+}
 
 
 
