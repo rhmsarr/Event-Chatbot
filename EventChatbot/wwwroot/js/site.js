@@ -19,8 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
         { date: "2025-05-01", label: "May 1 Labor and Solidarity Day" },
         { date: "2025-05-19", label: "May 19th Commemoration of Atatürk, Youth and Sports Day" },
         { date: "2025-08-30", label: "August 30 Victory Day" },
-
-       
     ];
 
     let dynamicEvents = [];
@@ -35,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch((error) => console.error("An error occurred while loading events:", error));
 
+    // Takvimi render etme fonksiyonu
     function renderCalendar(date) {
         const month = date.getMonth();
         const year = date.getFullYear();
@@ -72,7 +71,6 @@ document.addEventListener("DOMContentLoaded", function () {
             if (specialDay) {
                 dayCell.classList.add("special-day");
 
-                // Türüne göre CSS sınıfı ekle
                 if (staticSpecialDays.some((event) => event.date === fullDate)) {
                     dayCell.classList.add("static");
                 } else {
@@ -89,6 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
         updateEventsList();
     }
 
+    // Önceki ve sonraki aylar için butonlar
     document.getElementById("prev-month").addEventListener("click", function () {
         currentDate.setMonth(currentDate.getMonth() - 1);
         renderCalendar(currentDate);
@@ -99,6 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
         renderCalendar(currentDate);
     });
 
+    // Etkinlikler listesini güncelleme fonksiyonu
     function updateEventsList() {
         eventsList.innerHTML = "";
         const currentMonth = currentDate.getMonth() + 1;
@@ -135,4 +135,35 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
     }
+
+    // "Add Special Day" butonuna tıklandığında özel gün eklemek
+    document.getElementById("add-special-day").addEventListener("click", function () {
+        const dateInput = document.getElementById("special-date").value;
+        const labelInput = document.getElementById("special-label").value;
+
+        if (dateInput && labelInput) {
+            const newEvent = {
+                date: dateInput,
+                label: labelInput
+            };
+
+            // Dinamik etkinliklere ekle
+            dynamicEvents.push(newEvent);
+
+            // Tüm etkinlikleri güncelle
+            allEvents = [...staticSpecialDays, ...dynamicEvents];
+
+            // Takvimi yeniden render et
+            renderCalendar(currentDate);
+
+            // Etkinlikler listesini güncelle
+            updateEventsList();
+
+            // Formu temizle
+            document.getElementById("special-date").value = "";
+            document.getElementById("special-label").value = "";
+        } else {
+            alert("Please enter both date and label.");
+        }
+    });
 });
