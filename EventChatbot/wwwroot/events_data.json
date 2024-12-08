@@ -1,80 +1,388 @@
 [
-    {
-      "date": "2024-11-20",
-      "label": "Tea & Talk: Fevzi Can Küçükislamoğlu",
-      "location": "Ford Otosan",
-      "time": "16:30",
-      "description": "Deneyimli Endüstri Mühendisleri Günleri'ne hız kesmeden devam ediyoruz! Bu hafta Ford Otosan’da Kapasite ve Verimlilik Mühendisi Fevzi Can Küçükislamoğlu bizlerle olacak. Kendisi bizlere öğrencilik yıllarından profesyonel iş hayatına uzanan yolculuğunu ve bu süreçte kazandığı deneyimleri paylaşacak."
-    },
-    {
-      "date": "2024-11-16",
-      "label": "Dijital Pazarlama Eğitimi: Pelda Yalçınkaya",
-      "location": "Google Meet",
-      "time": "20:00",
-      "description": "Dijital Pazarlama Uzmanı Pelda Yalçınkaya tarafından gerçekleşetirilecek eğitime katılarak siz de dijital dünyada marka oluşturma konularında yeni bilgiler edinebilirsiniz. Eğitimimiz sertifikalıdır."
-    },
-    {
-      "date": "2024-11-13",
-      "label": "Teknik Gezi: Yazaki",
-      "location": "Yazaki Firması",
-      "time": "12:45",
-      "description": "Otomotiv sektörünün önde gelen yan sanayi üreticilerinden “Yazaki” firmasını ziyaret ederek üretim bantlarını yakından görme fırsatı elde edeceğiz. Teknik gezimiz kontenjanla sınırlı olup, kayıtlarımız yarın 11.00’dan itibaren M5 binasındaki kulüp odamızdan alınacaktır."
-    },
-    {
-      "date": "2024-11-13",
-      "label": "Tea & Talk: Oğuzhan Yağcı & Neslihan Yağcı",
-      "location": "LatteCup",
-      "time": "16:30",
-      "description": "Sakarya Üniversitesi Endüstri Mühendisliği bölümü mezunlarımızdan Oğuzhan Yağcı ve Neslihan Yağcı deneyimlerini aktarmak ve sorularınızı cevaplamak üzere bizlerle olacaklar."
-    },
-    {
-      "date": "2024-11-12",
-      "label": "Eğitim: Mehmet Dayıoğlu",
-      "location": "M5 - 5103",
-      "time": "14:00",
-      "description": "Mühendislik Gelişim Okulu’nun Kurucu & Eğitmeni ve Fuska Natural Spring Water Fabrika Müdürü Sayın Mehmet Dayıoğlu temel mühendislik gereksinimleri ve deneyimlerini aktarmak üzere bizlerle olacaktır."
-    },
-    {
-      "date": "2024-11-06",
-      "label": "Yenilikçi Zihinler: Kariyer Şifreleri",
-      "location": "Kültür ve Kongre Merkezi",
-      "time": "14:00",
-      "description": "Sektörün önde gelen firmalarından deneyimli isimler ile buluşup kariyerinizde fark yaratacak bilgiler edinmek ve onlara aklınızdaki soruları sorabileceğiniz bu etkinliğe katılın!"
-    },
-    {
-      "date": "2024-10-27",
-      "label": "Eğitim: Etkili LinkedIn Kullanımı",
-      "location": "Google Meet",
-      "time": "19:00",
-      "description": "Tekinder Genel Başkanı Sayın Dr. Mehmet Selçuk Batal’ın katılımıyla gerçekleştirilecek olan “Etkili LinkedIn Kullanımı” eğitimiyle, iş dünyasında kendinizi daha iyi ifade etmenin yollarını öğrenip, kariyer fırsatlarınızı genişletebilirsiniz."
-    },
-    {
-      "date": "2024-10-23",
-      "label": "Tea & Talk: Salim Aydın",
-      "location": "LatteCup",
-      "time": "15:15",
-      "description": "Yeni dönemdeki ilk Tea & Talk etkinliğimizde Deneyimli Endüstri Mühendisleri (DEM) temalı buluşmamızda İstanbul Teknik Üniversitesi endüstri mühendisi mezunlarından sayın Salim Aydın bizlerle olacak."
-    },
-    {
-      "date": "2024-10-15",
-      "label": "Zirve 23: Sesini Duyur!",
-      "location": "Volkswagen Arena",
-      "time": "TBD",
-      "description": "Bu yıl Zirve 23, 17 Ekim Perşembe günü Volkswagen Arena’da gerçekleşecek. Şahitlik ettiğimiz pek çok küresel sorun karşısında Zirve 23 sahnesinde 'Sesini Duyur!' temasıyla bir araya geliyoruz."
-    },
-    {
-      "date": "2024-10-08",
-      "label": "Bursa Model Fabrika Teknik Gezisi",
-      "location": "Bursa Model Fabrika",
-      "time": "11:30",
-      "description": "İnovasyon ve endüstri 4.0’ın kalbi, üretimde geleceği şekillendiren yenilikçi üretim teknolojileri, dijital dönüşüm ve akıllı üretim konularında öncü olan Bursa Model Fabrika’yı ziyaret edeceğiz."
-    },
-    {
-      "date": "2024-03-22",
-      "label": "Mesleğe Hazırlık: Ahmet İlhan Düzgün",
-      "location": "M5 Binası 5012 Nolu Sınıf",
-      "time": "14:00",
-      "description": "Alanında uzman eğitmen Ahmet İlhan Düzgün bizlere “Mesleğe Hazırlık” eğitimi verecektir. 5 hafta boyunca her cuma saat 14:00’te gerçekleşecek olan bu uzun soluklu eğitim sayesinde mesleğe adım atmadan önce hazırlığınızı yapabilirsiniz."
-    }
-  ]
-  
+  {
+    "date": "2024-11-20",
+    "label": "Tea & Talk: Fevzi Can Küçükislamoğlu",
+    "location": "Ford Otosan",
+    "time": "16:30",
+    "description": "Deneyimli Endüstri Mühendisleri Günleri'ne hız kesmeden devam ediyoruz! Bu hafta Ford Otosan’da Kapasite ve Verimlilik Mühendisi Fevzi Can Küçükislamoğlu bizlerle olacak. Kendisi bizlere öğrencilik yıllarından profesyonel iş hayatına uzanan yolculuğunu ve bu süreçte kazandığı deneyimleri paylaşacak."
+  },
+  {
+    "date": "2024-11-16",
+    "label": "Dijital Pazarlama Eğitimi: Pelda Yalçınkaya",
+    "location": "Google Meet",
+    "time": "20:00",
+    "description": "Dijital Pazarlama Uzmanı Pelda Yalçınkaya tarafından gerçekleşetirilecek eğitime katılarak siz de dijital dünyada marka oluşturma konularında yeni bilgiler edinebilirsiniz. Eğitimimiz sertifikalıdır."
+  },
+  {
+    "date": "2024-11-13",
+    "label": "Teknik Gezi: Yazaki",
+    "location": "Yazaki Firması",
+    "time": "12:45",
+    "description": "Otomotiv sektörünün önde gelen yan sanayi üreticilerinden “Yazaki” firmasını ziyaret ederek üretim bantlarını yakından görme fırsatı elde edeceğiz. Teknik gezimiz kontenjanla sınırlı olup, kayıtlarımız yarın 11.00’dan itibaren M5 binasındaki kulüp odamızdan alınacaktır."
+  },
+  {
+    "date": "2024-11-13",
+    "label": "Tea & Talk: Oğuzhan Yağcı & Neslihan Yağcı",
+    "location": "LatteCup",
+    "time": "16:30",
+    "description": "Sakarya Üniversitesi Endüstri Mühendisliği bölümü mezunlarımızdan Oğuzhan Yağcı ve Neslihan Yağcı deneyimlerini aktarmak ve sorularınızı cevaplamak üzere bizlerle olacaklar."
+  },
+  {
+    "date": "2024-11-12",
+    "label": "Eğitim: Mehmet Dayıoğlu",
+    "location": "M5 - 5103",
+    "time": "14:00",
+    "description": "Mühendislik Gelişim Okulu’nun Kurucu & Eğitmeni ve Fuska Natural Spring Water Fabrika Müdürü Sayın Mehmet Dayıoğlu temel mühendislik gereksinimleri ve deneyimlerini aktarmak üzere bizlerle olacaktır."
+  },
+  {
+    "date": "2024-11-06",
+    "label": "Yenilikçi Zihinler: Kariyer Şifreleri",
+    "location": "Kültür ve Kongre Merkezi",
+    "time": "14:00",
+    "description": "Sektörün önde gelen firmalarından deneyimli isimler ile buluşup kariyerinizde fark yaratacak bilgiler edinmek ve onlara aklınızdaki soruları sorabileceğiniz bu etkinliğe katılın!"
+  },
+  {
+    "date": "2024-10-27",
+    "label": "Eğitim: Etkili LinkedIn Kullanımı",
+    "location": "Google Meet",
+    "time": "19:00",
+    "description": "Tekinder Genel Başkanı Sayın Dr. Mehmet Selçuk Batal’ın katılımıyla gerçekleştirilecek olan “Etkili LinkedIn Kullanımı” eğitimiyle, iş dünyasında kendinizi daha iyi ifade etmenin yollarını öğrenip, kariyer fırsatlarınızı genişletebilirsiniz."
+  },
+  {
+    "date": "2024-10-23",
+    "label": "Tea & Talk: Salim Aydın",
+    "location": "LatteCup",
+    "time": "15:15",
+    "description": "Yeni dönemdeki ilk Tea & Talk etkinliğimizde Deneyimli Endüstri Mühendisleri (DEM) temalı buluşmamızda İstanbul Teknik Üniversitesi endüstri mühendisi mezunlarından sayın Salim Aydın bizlerle olacak."
+  },
+  {
+    "date": "2024-10-15",
+    "label": "Zirve 23: Sesini Duyur!",
+    "location": "Volkswagen Arena",
+    "time": "TBD",
+    "description": "Bu yıl Zirve 23, 17 Ekim Perşembe günü Volkswagen Arena’da gerçekleşecek. Şahitlik ettiğimiz pek çok küresel sorun karşısında Zirve 23 sahnesinde 'Sesini Duyur!' temasıyla bir araya geliyoruz."
+  },
+  {
+    "date": "2024-10-08",
+    "label": "Bursa Model Fabrika Teknik Gezisi",
+    "location": "Bursa Model Fabrika",
+    "time": "11:30",
+    "description": "İnovasyon ve endüstri 4.0’ın kalbi, üretimde geleceği şekillendiren yenilikçi üretim teknolojileri, dijital dönüşüm ve akıllı üretim konularında öncü olan Bursa Model Fabrika’yı ziyaret edeceğiz."
+  },
+  {
+    "date": "2024-03-22",
+    "label": "Mesleğe Hazırlık: Ahmet İlhan Düzgün",
+    "location": "M5 Binası 5012 Nolu Sınıf",
+    "time": "14:00",
+    "description": "Alanında uzman eğitmen Ahmet İlhan Düzgün bizlere “Mesleğe Hazırlık” eğitimi verecektir. 5 hafta boyunca her cuma saat 14:00’te gerçekleşecek olan bu uzun soluklu eğitim sayesinde mesleğe adım atmadan önce hazırlığınızı yapabilirsiniz."
+  },
+  {
+    "date":"2024-11-06",
+    "label":"Python101 Eğitimi",
+    "location":"Elektrik Elektronik Mühendisliği Fakültesi-6207",
+    "time":"14:00",
+    "description":"Bu eğitim, Python programlama diline başlamak isteyen herkes için harika bir fırsat! SAÜSİBER Akademi'nin 3. eğitimi olacak Python101'de, Pythonun kullanım alanlarına ve temel konularına değineceğiz. Eğitimden sonra pythonda hazırlamış olduğumuz bir virüsü hep birlikte deneyeceğiz. Python öğrenmek isteyen herkesi eğitime bekleriz!"
+  },
+  {
+    "date":"2024-11-30",
+    "label":"Linux 101",
+    "location":"Bilgisayar ve Bilişim Bilimleri Fakültesi - 1201",
+    "time":"14:00",
+    "description":"Terminal kullanımından en sık kullanılan araçlara bir çok konuya değindiğimiz bu eğimi kaçırmayın! Siber Güvenlik Uzmanlarının sıkça kullandığı işletim sistemi olan Linux'a gelin birlikte göz atalım."
+  },
+  {
+    "date":"2024-11-07",
+    "label":"3.Sakarya Enerji Zirvesi",
+    "location":"Fuat Sezgin Kongre Salonu",
+    "time":"14:00",
+    "description":"Yenilenebilir enerji, çevre dostu teknolojiler ve sürdürülebilir enerji çözümleri üzerine gerçekleşecek bu etkinlikte, alanında uzman konuşmacılarla tanışma ve sektördeki yenilikleri öğrenme fırsatını kaçırmayın."
+  },
+  {
+    "date":"2024-11-01",
+    "label":"Büyük Veri, Yapay Zeka ve Etik: Geleceğin Denge Noktası",
+    "location":"Fuat Sezgin Kongre Salonu",
+    "time":"14:00",
+    "description":" İşinde uzman insanlarla “Veri Bilimi ve Büyük Veri” ve “Yapay Zeka ve Etik” konularında bizimle beraber panelimizde tartış!"
+  },
+  {
+    "date":"2024-12-04",
+    "label":"Tea & Talk: DEM Günleri",
+    "location":"LatteCup",
+    "time":"16:30",
+    "description":"İş hayatına BMC’de devam eden konuğumuz kendi deneyimlerini paylaşmak ve sorularınızı cevaplamak üzere bizlerle olacak."
+  },
+  {
+    "date":"2024-11-12",
+    "label":"Hastane Okulu Projesi: Minik Kalpler İçin El Ele",
+    "location":"Sakarya Üniversitesi Eğitim Araştırma Hastanesi’nin Onkoloji bölümü",
+    "time":"10:00",
+    "description":"Bu ziyaretle onların hayatlarına umut ve mutluluk katmak, moral desteği sunarak yanlarında olduğumuzu göstermek istiyoruz. Küçük bir dokunuşun büyük bir etki yaratacağına inanarak minik kalplerle dayanışmamızı güçlendiriyoruz."
+  },
+  {
+    "date":"2024-11-12",
+    "label":"Mühendisliğe Giriş Eğitimi",
+    "location":"M5 - 5103",
+    "time":"14:00",
+    "description":"Mühendislik Gelişim Okulu’nun Kurucu & Eğitmeni ve Fuska Natural Spring Water Fabrika Müdürü Sayın Mehmet Dayıoğlu temel mühendislik gereksinimleri ve deneyimlerini aktarmak üzere bizlerle olacaktır."
+  },
+  {
+    "date":"2024-12-04",
+    "label":"Girişimci Hızlandırma Programı Finali",
+    "location":"Sakarya Üniversitesi Turgut Özal Kültür ve Kongre Merkezi Konferans salonu",
+    "time":"14:00",
+    "description":"Sakarya Teknokent’in yenilikçi fikirlerinin merkezi olan Füzyon Kuluçka Merkezi tarafından düzenlenen bu etkinlik, ilham verici girişimlerle dolu ve büyük fırsatlar sunuyor. Yenilikçi fikirlerin keşfe çıkacağı bu unutulmaz deneyimi kaçırmayın!"
+  },
+  {
+    "date":"2024-11-08",
+    "label":"The Good, the Bad and the Ugly ( İyi, Kötü ve Çirkin)",
+    "location":"Helikopter Pisti Çadır Obscura",
+    "time":"18:00",
+    "description":"Bu hafta konsept haftalarımızdan western haftası. Bu haftaya yakışır biçim de Sergio Leone’nun dolar üçlemesinin üçüncü ve sonuncu filmi olan İyi, Kötü ve Çirkin ile western haftasına veda ediyoruz. •Üç silah arkadaşının maceralarını konu ediyor. Ortak bir hedefe doğru değişik nedenlerle yol almakta olan üç silah arkadaşı aslında kader açısından yolları kesişmiş insanlardır. İsimleri İyi, Kötü ve Çirkin olan bu kişiler için o dönemdeki Amerikan İç Savaşı bir araçtır."
+  },
+  {
+    "date":"2024-11-06",
+    "label":"For a Few Dollars More ( Bir Kaç Dolar İçin)",
+    "location":"Helikopter Pisti Çadır Obscura",
+    "time":"18:30",
+    "description":"Bu hafta konsept haftalarımızdan western haftası ve bu haftaya yakışır biçim de Sergio Leone’nun dolar üçlemesinin ikinci filmi olan Bir Avuç Dolar ile devam ediyoruz. •Mortimer ve Monco isimli ödül avcıları, suçlu ve kaçakların peşine düşerek, onların kellerine biçilen paraları kazanırken, son ödül azılı bir hapishane kaçkını olan Indio'nun kellesine konulan 10.000 dolardır. Mortimer bu kez paranın değil, intikamın peşindedir ve bu yolda en büyük desteği kendisi gibi intikam peşinde koşan Albay Douglas'tan görecektir."
+  },
+  {
+    "date":"2024-11-04",
+    "label":"A Fistful Of Dollars ( Bir Avuç Dolar)",
+    "location":"Helikopter Pisti Çadır Obscura",
+    "time":"18:30",
+    "description":"Bu hafta konsept haftalarımızdan western haftası ve bu haftaya yakışır biçim de Sergio Leone’nun dolar üçlemesinin ilk filmi olan Bir Avuç Dolar ile başlıyoruz. Film: kasabadaki düşman iki aileyi, zekâsı ve ikili oyunuyla birbirine düşüren ve bu yolla altın sahibi olan bir kovboyu anlatır."
+  },
+  {
+    "date":"2024-11-01",
+    "label":"A Nightmare On Elm Street (Elm Sokağında Kabus)",
+    "location":"Helikopter Pisti Kapalı Çadır",
+    "time":"18:30",
+    "description":"Bu hafta konsept haftalarımızdan korku haftası. Film; Ohio'da Springwood isimli bir kasabada birkaç gencin rüyalarında seri çocuk katili Freddy Krueger'ın hayaleti tarafından *ldürülmelerini konu alır. Eğer Freddy peşinizdeyse tek çare uykuya direnmekte midir? Yoksa onunla kendi kabusunda yüzleşmekte mi?"
+  },
+  {
+    "date":"2024-10-30",
+    "label":"As Above So Below (Derin Kabus)",
+    "location":"Helikopter Pisti Kapalı Çadır",
+    "time":"18:30",
+    "description":"Bu hafta konsept haftalarımızdan korku haftası. Bildiğiniz üzere geçen hafta müzikal ile başlayan konsept haftası, bu sefer klostrofobik bir film olan Derin Kabus'la tam gaz devam ediyor. Film; felsefe taşı peşinde koşan arkeolog-simyager bir kadının, ekibi paris yer altı mezarlıklarına sürüklemesini ele alıyor."
+  },
+  {
+    "date":"2024-11-06",
+    "label":"Kariyer Koçluğu Atölyesi",
+    "location":"Online",
+    "time":"14:00",
+    "description":"Bu etkinlikte, MYK Belgeli Profesyonel ICF Koçu Irmak CANKUL ile buluşarak kariyer yolculuğunuzda koçluk becerilerinizi geliştirme fırsatı bulacaksınız."
+  },
+  {
+    "date":"2024-11-08",
+    "label":"Sürdürülebilirliği Anlamak ve Uygulamak",
+    "location":"Sakarya Üniversitesi Kültür ve Kongre Merkezi, Prof. Dr. Fuat Sezgin Salonu",
+    "time":"14:00",
+    "description":"Sakarya Üniversitesi İşletme Topluluğu, Muhasebe Denetim ve Finans Öğrenci Topluluğu ve Sakarya Üniversitesi Kariyer Geliştirme Koordinatörlüğü iş birliğiyle düzenlenen “Sürdürülebilirliği Anlamak ve Uygulamak” etkinliğine davetlisiniz! Bu etkinlikte, sürdürülebilirlik kavramını derinlemesine anlamak ve iş dünyasında nasıl uygulanabileceğini öğrenmek için bir araya geliyoruz. “Sürdürülebilirlik Raporlama Dönemi: Geleceğin Meslekleri ve Fırsatları” temasıyla gerçekleşecek bu etkinlikte, Kamu Gözetimi Kurumu Uzmanı Tufan Göçer bizlere bilgi ve tecrübelerini aktaracak."
+  },
+  {
+    "date":"2024-12-09",
+    "label":"Kariyer Zirvesi",
+    "location":"Prof.Dr. Sabahattin Zaim Konferans Salonu",
+    "time":"14:00",
+    "description":"Genç Girişimciler Kulübü olarak bu yılın ilk büyük zirvesini olan ‘Kariyer Zirvesi’ adlı etkinliğimiz ile sizlerleyiz. Birbirinden değerli konukları ağırlayacağımız bu etkinliğe hepinizi bekliyoruz. Etkinliğimiz sertifikalıdır."
+  },
+  {
+    "date":"2024-11-13",
+    "label":"Girişimcilik Sohbetleri",
+    "location":"Prof.Dr. Fuat Sezgin Salonu",
+    "time":"14:00",
+    "description":"Genç Girişimciler Kulübü olarak, Ford Otosan Data Scientist - Tech Influencer Zeynep Küçük ile \"Veri Bilimi Ve Geleceği\" etkinliği düzenleyeceğiz. Etkinliğimiz sertifikalıdır."
+  },
+  {
+    "date":"2024-11-12",
+    "label":"Bilgi Yarışması",
+    "location":"Kültür ve Kongre Merkezi Prof.Dr.Gültekin Yıldız Salonu",
+    "time":"15:00",
+    "description":"Bilgisini test etmek isteyen ve her konuda iddialı olduğunu düşünen bütün üyelerimizi bekliyoruz.Bakalım kim daha bilgili?"
+  },
+  {
+    "date":"2024-11-05",
+    "label":" Tiyatro Suretler",
+    "location":"Kültür ve Kongre Merkezi Prof. Dr. Nevzat Kor Salonu",
+    "time":"19:47",
+    "description":"\"Tiyatro; insanı, insana, insanla, insanca anlatma sanatıdır.\" düşüncesinden yola çıkarak Tiyatro Suretler ile birlikte düzenlediğimiz Doğaçlama Tiyatro ile sizlerleyiz."
+  },
+  {
+    "date":"2024-11-08",
+    "label":"Mühendislikte Öncü Bir Başarı",
+    "location":"Sakarya Üniversitesi Kültür ve Kongre Merkezinde",
+    "time":"14:00",
+    "description":"Türkiye’de mühendislik alanında doktorayı tamamlayan ilk işitme engelli Yazılım Mühendisimiz Dr. Burak UYANIK 8 Kasım Cuma günü Sakarya Üniversitesi Kültür ve Kongre Merkezinde. Etkinliğimizin gerçekleşeceği salonda indüksüyon döngü sistemi bulunmakta olup işitme cihazı kullananlar için etkinliği erişilebilir kılmaktadır.Katılımlarınızı bekliyoruz."
+  },
+  {
+    "date":"2024-11-21",
+    "label":"Büyük Buluşmaya Hazır Misin",
+    "location":"Mavi Durak Vookah Cafe",
+    "time":"19:00",
+    "description":"Herkese merhabalar. İnsan Kaynakları ve Kariyer Kulübü olarak yeni döneme hızlı bir başlangıç yapıyoruz! Üyelerimizle tanışmak ve kulüp çalışmalarımızı paylaşmak için düzenlediğimiz tanışma toplantımıza hepinizi bekliyoruz. Bu keyifli akşamda, yeni arkadaşlıklar kurmak ve kariyer hedeflerimize birlikte adım atmak için buluşalım!"
+  },
+  {
+    "date":"2024-12-05",
+    "label":" Kıbrıs sorunu ve 50. Yılında Barış Harekatı",
+    "location":"Sabahattin Zaim Konferans Salonu",
+    "time":"15:00",
+    "description":"Ahmet Cevdet Paşa Hukuk Öğrenci Topluluğu ve Sakarya Üniversitesi Uluslararası ilişkiler Öğrenci Topluluğu olarak Uluslararası Hukuk bakımından Kıbrıs sorunu ve 50. Yılında Barış Harekatı’nı sayın Dr. Mehmet Akif POROY ve Sayın dekan Yardımcımız Dr. Emre PARTALCI ve Doç.Dr. Sezercan BEKTAŞ’ın katılımıyla ele alıyoruz. Gerçekleştireceğimiz konferansımızda sizleri de bekliyoruz."
+  },
+  {
+    "date":"2024-12-05",
+    "label":"2025 Yılında Zihninize Pozitif Zeka İle Hükmedin",
+    "location":"Google Meet",
+    "time":"19:00",
+    "description":"Yeni bir yıla adım atarken zihinsel dayanıklılığınızı ve mutluluğunuzu nasıl artırabilirsiniz? Sorunun cevabını öğrenmek için sizleri Bertay Fişekçi’nin rehberliğinde, “Pozitif Zeka” ile tanışmaya davet ediyoruz! Bertay Fişekçi’nin liderliğinde; Zihinsel esneklik geliştirme,  Engeller karşısında pozitif yaklaşım benimseme, İş ve özel yaşamda güçlü bir zihin yönetimi tekniklerini öğrenin. 2025 yılına pozitif bir başlangıç yapmak için bu fırsatı kaçırmayın!"
+  },
+  {
+    "date":"2024-11-13",
+    "label":"Çatışma-Çözüm Simülasyonu",
+    "location":" S1 411",
+    "time":"16:00",
+    "description":"Çok sevilen barış ve çözüm odaklı simülasyon etkinliğimizi üçüncü kez düzenlemekten gurur duyuyoruz! Sizlerin bakış açısıyla Azerbaycan ve Ermenistan arasındaki zorlu çatışmayı çözmeyi amaçlayan bu simülasyon, stratejik düşünme becerilerini geliştirirken çatışma çözümü sürecine dair derin bir anlayış kazanılmasını sağlıyor.Karşılıklı diyaloğu ve iş birliğini destekleyerek sürdürülebilir bir çözüm arayışına davetlisiniz!"
+  },
+  {
+    "date":"2024-11-12",
+    "label":"Girişimci Düşünce Yapısı ve Kişisel Marka",
+    "location":" Sakarya Üniversitesi Turgut Özal Kültür ve Kongre Merkezi Prof. Dr. Fuat Sezgin Salonu",
+    "time":"14:00",
+    "description":"Girişimcilik ruhunu harekete geçirmek ve kişisel markanızı nasıl güçlendirebileceğinizi öğrenmek ister misiniz? Herbalife Doğu Avrupa & Afrika Pazar Geliştirme Kıdemli Müdürü Serdar Örs’ün 20 yıllık deneyimlerini paylaşacağı “Girişimci Düşünce Yapısı ve Kişisel Marka” başlıklı kariyer sohbetinde, ilham dolu bir yolculuğa çıkmaya davetlisiniz! "
+  },
+  {
+    "date":"2024-11-07",
+    "label":"Liderlik Yönetimi, Becerileri ve Kazanımı",
+    "location":"Google Meet",
+    "time":"19:00",
+    "description":"Yine yeniden eşsiz bir eğitimle karşınızdayız! İş hayatınızda bir adım öne çıkmayı, yönetici pozisyonuna nasıl ulaşabileceğinizi, ideal ve profesyonel bir lider olmanın hayalini kuruyorsanız bunu gerçekleştirmeniz hiç zor olmayacak. Birçok şirkette profesyonel koçluk ve danışmanlık yapan, ceptedanışman şirketinin kurucusu, Microsoft Türkiye ofisinde teknik koordinatörlük yapan ve aynı zamanda matematik mühendisi Dr. Gülay Savaş ile yapacağımız \"Liderlik Yönetimi, Becerileri ve Kazanımı\" başlıklı eğitimimize hepiniz davetlisiniz."
+  },
+  {
+    "date":"2024-10-30",
+    "label":"Çatışma-Çözüm Simülasyonu",
+    "location":"S1 411 Toplantı Odası",
+    "time":"14:00",
+    "description":"Sevilen etkinliğimiz Çatışma - Çözüm Simülasyonu'nun ikincisi ile karşınızdayız! Çatışma - Çözüm Simülasyonu; barışı sağlamada temel araç olan diplomasi kurumları işbirliği, müzakere, karşılıklı tartışma, arabuluculuk ve uluslararası hukuk konularında öğretim aracı olarak tasarlanmış, maksimum öğrenme ve beceri geliştirmeyi hedefleyen bir etkinliktir."
+  },
+  {
+    "date":"2024-10-27",
+    "label":"Stres Yönetimi Eğitimi",
+    "location":"Google Meet",
+    "time":"19:00",
+    "description":"Hayatınızdaki yoğun işlerin baskısıyla baş edemiyorsanız, stres altında kalmaktan bıktıysanız bu eğitim tam size göre! Alanında uzman ve deneyimli olan, birçok şirkette eğitmenlik görevinde bulunan ve aynı zamanda danışmanlık şirketine sahip olan Sema Aksu ile \"Stres Yönetimi\" başlıklı eğitimimize hepinizi bekliyoruz."
+  },
+  {
+    "date":"2024-11-30",
+    "label":" Beyond Tomorrow: The AI Revolution",
+    "location":"Çevrimiçi",
+    "time":"12:00",
+    "description":"Yapay zeka ve bu teknolojinin sınırsız olasılıklarını keşfetmek üzere bir yolculuğa çıkıyoruz. Beş vizyoner konuşmacımız, yapay zekanın dünyamızı nasıl şekillendirdiğine dair zorlukları ve fırsatları ele alan ilgi çekici konularla bizlere rehberlik edecek."
+  },
+  {
+    "date":"2024-11-06",
+    "label":" Yapay Zekâ",
+    "location":"Bilgisayar Bilimleri Fakültesi - 1201",
+    "time":"14:00",
+    "description":"Günümüzün en merak uyandıran konularını ele alan , hem bugüne hem de geleceğe ışık tutacak muhteşem bir etkinlik düzenliyoruz! Y İnovasyon ve Teknoloji Şirketi’nden Serkan Kav ve  A. Nihat Uzunalioğlu, yapay zekanın gücünü ve gelecekteki rolünü anlatmak için bizlerle olacak!"
+  },
+  {
+    "date":"2024-10-16",
+    "label":"Girişimci Hızlandırma Programı (G-FAST) Tanıtımı!",
+    "location":"Füzyon Kuluçka Merkezi",
+    "time":"16:00",
+    "description":"Girişimcilerin iş fikirlerini hayata geçirirken karşılaşabilecekleri her türlü zorluğa karşı destek olmayı amaçlayan Füzyon Kuluçka Merkezi, farklı aşamalardaki girişimci adaylarının ihtiyaçlarına yönelik çeşitli programlar yürütmekte ve girişimcilerin potansiyellerini üst düzeye çıkararak başarılı girişimciler ortaya çıkarmayı hedeflemektedir."
+  },
+  {
+    "date":"2024-10-16",
+    "label":"Teknokent Füzyon Ön Kuluçka Merkezi Girişimcilik Etkinliği",
+    "location":"Füzyon Kuluçka Merkezi",
+    "time":"16:00",
+    "description":"Teknoloji ve girişimcilik alanında kendinizi geliştirebileceğiniz, şirketlerle iş birliği kurarak başarılı girişimcilik adımları atmanın yollarını öğreneceğiniz ve fikirlerinizi profesyonel projelere dönüştürebileceğiniz bir etkinlikte karşınızdayız!"
+  },
+  {
+    "date":"2024-12-05",
+    "label":"KARAKTER PERDESİ :SAHNEDE KİM VAR?",
+    "location":"Fikir ile Gelecek Ofisi",
+    "time":"19:00",
+    "description":"Yeniden etkinliğe hazır mıyız? Bilim dünyasında ve farklı kültürlerde öneme sahip tarihe damgasını vurmuş  karakterlere hayat vereceğimiz ve  bu kişiyi tamamen yaratıcılığımıza bağlı  olarak anlatacağımız harika ve yepyeni bir etkinlikle karşındayız. Sen de bu karakterlerleri tanımak ve tahmin etmek istiyorsan aramıza katılmayı unutma!"
+  },
+  {
+    "date":"2024-12-06",
+    "label":"Liderlik ve Etkili İletişimin Temelleri",
+    "location":" Microsoft Teams",
+    "time":"19:00",
+    "description":"İletişim becerilerinizi geliştirmeye ve çevrenizdeki insanları etkilemeye ne dersiniz? Liderlik ederken sözlerinizin gücünü nasıl artırabilirsiniz?  Sizleri etkili iletişim ve liderliğin püf noktalarını keşfetmeye davet ediyoruz. Konuya dair bilgi sahibi olmak, sorularınızı cevaplandırmak ve hayatınızı iyileştirmek adına Profesyonel Yönetici ve Kariyer Koçu Rabia Arslan Kıymaz’ı ağırlıyoruz."
+  },
+  {
+    "date":"2024-12-04",
+    "label":"Prometeon Teknik Gezi",
+    "location":"Prometeon / Kocaeli",
+    "time":"10:00",
+    "description":"Fikir ile Gelecek Ailesi olarak dev markalarla teknik gezi yolculuğumuza başlıyoruz! İşte ilk durağımız olan Kocaeli Prometeon ile karşınızdayız! Prometeon Tyre Group, tüm dünyada endüstriyel ve ticari lastik odaklı tek şirket olarak Anteo, Eracle, Tegrys markalarının yanı sıra Formula, Pharos ve Pirelli lisansıyla endüstriyel ve ticari lastikleri üretiyor. Bu gezide, kamyon, otobüs, tarım ve iş makineleri lastiklerinin tüm üretim süreçlerini gözlemleyeceğiz ardından öğle yemeği ile kapanış yapacağız."
+  },
+  {
+    "date":"2024-11-13",
+    "label":"Figma’ya Giriş: Dijital Arayüz Tasarımı",
+    "location":"Google Meet",
+    "time":"18:00",
+    "description":"ijital tasarımlara karşı ilgili misin? Figma’nın ne işe yaradığını öğrenmek ve etkin bir şekilde kullanmak mı istiyorsun? Düzenlediğimiz “Figma’ya Giriş: Dijital Arayüz Tasarımı” eğitimimize davetlisiniz. Konuya dair bilgi sahibi olmak, sorularınızı cevaplandırmak ve uygulama üzerinden pekiştirebilmek için Dijital Ürün Tasarımcısı Ramazan Güler’i ağırlıyoruz."
+  },
+  {
+    "date":"2024-11-07",
+    "label":"FiGTalk Orta Doğu’da Güç Savaşları: İsrail ve İran",
+    "location":"Fikir ile Gelecek Ofisi",
+    "time":"19:00",
+    "description":" İsrail ve İran arasındaki gerilimin sebepleri nelerdir? Yaşanan gerilimler nasıl sonuçlanabilir? Türkiye bu gerilimden nasıl etkilenebilir? Bu sorularımıza cevap bulmak adına Sayın hocamız Dr. Öğr. Üyesi Mustafa Caner’i ağırlayacağız."
+  },
+  {
+    "date":"2024-10-23",
+    "label":"Stratejik Bakış Açısıyla Yeni Nesil İK’cılar",
+    "location":"Google Meet",
+    "time":"19:00",
+    "description":"Fikir ile Gelecek ailesi olarak yepyeni ve çok farklı bir eğitimle karşınızdayız! Bu hafta ’Stratejik Bakış Açısıyla Yeni Nesil İK’cılar’ konusu hakkında bilgi sahibi olacağınız yeni bir eğitimimiz var.  Stratejik hedeflere ulaşmada insan kaynağının önemi büyük! Peki, doğru insan kaynakları yönetimi stratejileri nasıl belirlenir? ‘Geleceğin Liderleri: Stratejik Bakış Açısıyla Yeni Nesil İK’cılar’ eğitimimize katılarak etkili yönetim stratejilerini keşfetmeye davetlisiniz. Konuya dair bilgi sahibi olmak, sorularınızı cevaplandırmak ve hayatınızı iyileştirmek adına Dijital, Yalın ve Stratejik Yönetim Danışmanı Hakan Çelik’i ağırlıyoruz."
+  },
+  {
+    "date":"2024-10-18",
+    "label":"FiGTalk İşinde Gelecek",
+    "location":"Zoom",
+    "time":"20:00",
+    "description":"İş analizi ve müşteri başarı yönetimi dünyasında neler oluyor? Teknoloji devleri bu süreçleri nasıl yönetiyor?  FiGTalk İşinde Gelecek etkinliğimizde Shell İş Analisti Semih Altıntop ve Microsoft Müşteri Deneyimi Yöneticisi Büşra Kamiloğlu ile birlikteyiz. İş süreçlerinde stratejik planlamanın, analizin ve müşteri yönetiminin nasıl yapıldığını merak ediyorsanız bu etkinlik tam size göre! İş dünyasında fark yaratmak ve profesyonellerden ilham almak istiyorsanız, sorularınızı sorabileceğiniz bu keyifli sohbete davetlisiniz!"
+  },
+  {
+    "date":"2024-11-01",
+    "label":"Kadınlar Satrançta Buluşuyor!",
+    "location":"Serdivan Gençlik Merkezi",
+    "time":"16:30",
+    "description":"Benzersiz bir gün için sizleri 1 Kasım’da düzenleyeceğimiz özel etkinliğimize davet ediyoruz! Yalnızca kadınlara özel bu buluşmada, hem lezzetli ikramlarımızla kendinize bir mola verecek hem de keyifli anlar yaşayacaksınız. Sıcak sohbetler, ilham dolu anlar ve enerjinizi tazeleyecek bir atmosfer sizleri bekliyor."
+  },
+  {
+    "date":"2024-11-02",
+    "label":"Kaya Tırmanışı",
+    "location":"Geyve Tırmanış Bahçesi",
+    "time":"08:30",
+    "description":"2 kasım Cumartesi , İzci ve Doğa sporları ve Kış Sporları Toplulukları olarak Geyve Tırmanış Bahçesi’ne Kaya Tırmanışı yapmaya gidiyoruz! Etkinlik başvuruları toplulukların whatsapp gruplarından paylaşılacak duyuru formu ile toplanacaktır. Kontenjanımız sınırlıdır!"
+  },
+  {
+    "date":"2024-10-15",
+    "label":"Tanışma Toplantısı",
+    "location":"Arabica Coffee",
+    "time":"19:00",
+    "description":"Biz Kış Sporları Topluluğu, Bu mesajı yıldızlar arasında saklanan ve hayatta kalan tüm üyelerimize gönderiyoruz. Biz burdayız ve sizi bekliyoruz."
+  },
+  {
+    "date":"2024-11-07",
+    "label":"Tirat İzleme Etkinliği ",
+    "location":"Serdivan Gençlik Merkezi",
+    "time":"18:00",
+    "description":"Tiyatronun büyüsünü, sahnede yankılanan güçlü tiratlarla keşfetmeye davetlisiniz! Tirat İzleme Etkinliği’nde oyuncuların performanslarıyla insan ruhunun derinliklerine tanıklık edin, unutulmaz anlara ortak olun. İster tiyatro tutkunu, ister yeni bir izleyici olun; bu deneyim sizi sanatla buluşturacak. bu özel etkinliğe hepiniz davetlisiniz :) "
+  },
+  {
+    "date":"2024-10-26",
+    "label":"Doğaçlama Gecesi",
+    "location":"Serdivan Gençlik Merkezi",
+    "time":"18:00",
+    "description":"Merhaba arkadaşlar, Sahneye ilk adımı atıyoruz ve doğaçlama etkinliğimiz ile sizlerle buluşuyoruz. Birbirimizi daha yakından tanıyıp bolca eğleneceğimiz bir akşam olacak"
+  } 
+
+]
