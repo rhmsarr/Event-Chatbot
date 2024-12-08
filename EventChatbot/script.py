@@ -26,6 +26,9 @@ vector_store = InMemoryVectorStore(embeddings)
 file_path = "data/events_data.txt"  # Path to the event data file.
 file_path2 = "data/user_data.txt"  # Path to the user data file.
 
+# Initialize user session
+user_history = []  # This will keep track of the entire conversation history.
+
 try:
     # Reading the content of the events data file.
     with open(file_path, "r", encoding="utf-8") as file:
@@ -44,36 +47,51 @@ try:
     vector_store.add_documents(documents=documents)
     print("Documents added successfully!")  # Confirmation message.
 
-    # Retrieving the query from command-line arguments.
-    query = sys.argv[1]  # First command-line argument is used as the query.
-    print(f"User Input : {query}")  # Printing the user-provided query.
+    # Start a conversation loop
+    while True:
+        # Retrieving the query from user input (as a loop for continuous conversation).
+        query = input("You: ")  # This will continuously ask for user input in the console.
+        if query.lower() == "exit":
+            print("Exiting conversation. Goodbye!")
+            break  # End the conversation when the user types "exit"
 
-    # Performing similarity searches to retrieve relevant documents.
-    results1 = vector_store.similarity_search(query, k=1)  # Top 1 most similar document.
-    results2 = vector_store.similarity_search(query, k=2)  # Top 2 most similar documents.
+        # Perform similarity searches to retrieve relevant documents based on user query.
+        results1 = vector_store.similarity_search(query, k=1)  # Top 1 most similar document.
+        results2 = vector_store.similarity_search(query, k=2)  # Top 2 most similar documents.
 
-    # Combining the results from both searches.
-    combined = results1 + results2
+        # Combining the results from both searches.
+        combined = results1 + results2
 
-    # Extracting the content of the retrieved documents.
-    relevant_documents = [result.page_content for result in combined]
-    # Constructing a detailed prompt for the LLM.
-    prompt = (
-        f"You are an intelligent assistant tasked with recommending events to users. "
-        f"Based on the following documents and user preferences, recommend events "
-        f"that align with their availability and interests. Address the user directly, "
-        f"and format the explicate and interpreted response as bullet points.\n\n"
-        f"### User Availability Information:\n"
-        f"1. If 'AM' is true, the user is busy between 9 AM and 5 PM.\n"
-        f"2. If 'PM' is true, the user is busy between 5 PM and 10 PM.\n"
-        f"3. Events should be recommended for times when the user is not busy.\n\n"
-        f"### Documents:\n{relevant_documents}\n\n"
-        f"### Task:\n{query}"
+        # Extracting the content of the retrieved documents.
+        relevant_documents = [result.page_content for result in combined]
+        # Constructing a detailed prompt for the LLM.
+        prompt = (
+        f"You are an intelligent and empathetic assistant. Your primary task is to assist users with any inquiries, "
+        f"providing thoughtful and context-aware responses. Below is the conversation so far, followed by the user's most recent query. "
+        f"Use the context of the conversation to respond appropriately.\n\n"
+        f"### Conversation History:\n"
+        f"{''.join(user_history)}\n\n"  # Include the entire conversation history
+        f"### User Query:\n{query}\n\n"
+        f"### Relevant Documents:\n{relevant_documents}\n\n"
+        f"### Instructions:\n"
+        f"- For general inquiries or casual conversations: Respond directly and empathetically without mentioning recommendations.\n"
+        f"- For event-related requests: Recommend events based on the user's availability and the provided documents.\n"
+        f"- Format recommendations as bullet points for clarity."
     )
 
-    # Invoking the LLM to generate a response based on the prompt.
-    response = llm.invoke(prompt)
-    print(f"Response: {response.content}")  # Printing the LLM-generated response.
+
+
+        # Append user input to conversation history
+        user_history.append(f"You: {query}\n")
+
+        # Invoking the LLM to generate a response based on the prompt.
+        response = llm.invoke(prompt)
+        print(f"Assistant: {response.content}\n")  # Printing the LLM-generated response.
+
+        # Append chatbot response to the conversation history
+        user_history.append(f"Assistant: {response.content}")
+
+     
 
 # Handling any exceptions that may occur during file reading or processing.
 except Exception as e:
