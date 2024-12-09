@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\beyza\\OneDrive\\Desktop\\EventChatbot\\Event-Chatbot\\EventChatbot\\EventChatbot.csproj": {}
+    "C:\\Users\\beyza\\OneDrive\\Desktop\\EventChatbot\\Event-Chatbot\\EventChatbot\\EventChatbot.csproj": {}
   },
   "projects": {
-    "c:\\Users\\beyza\\OneDrive\\Desktop\\EventChatbot\\Event-Chatbot\\EventChatbot\\EventChatbot.csproj": {
+    "C:\\Users\\beyza\\OneDrive\\Desktop\\EventChatbot\\Event-Chatbot\\EventChatbot\\EventChatbot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\beyza\\OneDrive\\Desktop\\EventChatbot\\Event-Chatbot\\EventChatbot\\EventChatbot.csproj",
+        "projectUniqueName": "C:\\Users\\beyza\\OneDrive\\Desktop\\EventChatbot\\Event-Chatbot\\EventChatbot\\EventChatbot.csproj",
         "projectName": "EventChatbot",
-        "projectPath": "c:\\Users\\beyza\\OneDrive\\Desktop\\EventChatbot\\Event-Chatbot\\EventChatbot\\EventChatbot.csproj",
+        "projectPath": "C:\\Users\\beyza\\OneDrive\\Desktop\\EventChatbot\\Event-Chatbot\\EventChatbot\\EventChatbot.csproj",
         "packagesPath": "C:\\Users\\beyza\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\beyza\\OneDrive\\Desktop\\EventChatbot\\Event-Chatbot\\EventChatbot\\obj\\",
+        "outputPath": "C:\\Users\\beyza\\OneDrive\\Desktop\\EventChatbot\\Event-Chatbot\\EventChatbot\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\beyza\\AppData\\Roaming\\NuGet\\NuGet.Config",

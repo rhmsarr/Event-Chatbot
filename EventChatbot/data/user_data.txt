@@ -1,17 +1,16 @@
 {
-  "Name": "Saliha",
+  "Name": "Arif",
   "Interests": [
-    "HealthSciences",
     "Sports",
     "Theology"
   ],
   "Availability": {
     "Monday": {
-      "AM": true,
+      "AM": false,
       "PM": false
     },
     "Tuesday": {
-      "AM": false,
+      "AM": true,
       "PM": false
     },
     "Wednesday": {
@@ -19,19 +18,19 @@
       "PM": false
     },
     "Thursday": {
-      "AM": true,
+      "AM": false,
       "PM": false
     },
     "Friday": {
       "AM": false,
-      "PM": true
+      "PM": false
     },
     "Saturday": {
-      "AM": false,
+      "AM": true,
       "PM": false
     },
     "Sunday": {
-      "AM": false,
+      "AM": true,
       "PM": false
     }
   }
