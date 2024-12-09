@@ -1,14 +1,7 @@
 {
-<<<<<<< HEAD
-  "Name": "Arif",
+  "Name": "Alora",
   "Interests": [
-    "Sports",
-    "Theology"
-=======
-  "Name": "jk",
-  "Interests": [
-    "PoliticalScience"
->>>>>>> 88c7d4d0681d7cb378453f5286ff902156729345
+    "Economy"
   ],
   "Availability": {
     "Monday": {
@@ -16,11 +9,11 @@
       "PM": false
     },
     "Tuesday": {
-      "AM": true,
+      "AM": false,
       "PM": false
     },
     "Wednesday": {
-      "AM": true,
+      "AM": false,
       "PM": false
     },
     "Thursday": {
@@ -36,7 +29,7 @@
       "PM": false
     },
     "Sunday": {
-      "AM": true,
+      "AM": false,
       "PM": false
     }
   }
