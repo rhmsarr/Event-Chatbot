@@ -1,6 +1,64 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Privacy Policy and Ethical Considerations";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<div class="container">
+    <header class="page-header">
+        <h1>@ViewData["Title"]</h1>
+    </header>
+
+    <section class="content">
+        <p>
+            When utilizing the AI model Cohere, which has access to user data files and a history array during runtime, 
+            we prioritize privacy and adhere to strict ethical guidelines. User data is processed solely during the application session and is not stored permanently, 
+            ensuring that sensitive information remains secure.
+        </p>
+        <p>
+            Cohere emphasizes privacy and compliance with applicable laws, advising against uploading personal information and placing the responsibility of lawful data usage on customers. 
+            Additionally, safeguards such as encryption and restricted access are implemented to protect data against unauthorized use.
+        </p>
+        <p>
+            By maintaining transparency in how data is handled and limiting its use to runtime, this approach respects user privacy 
+            while ensuring compliance with ethical standards and data protection policies.
+        </p>
+    </section>
+</div>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('https://www.york.ac.uk/media/philosophy/images/ma-applied-ethics-hero.jpg'); /* Replace with your image URL */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .container {
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgba(238, 245, 251, 0.79); /* White background with slight transparency */
+        border-radius: 10px;
+        line-height: 1.6;
+    }
+
+    .page-header {
+        text-align: center;
+        margin-bottom: 20px;
+                font-family: 'Times New Roman', Times, serif;
+
+    }
+
+    h1 {
+        font-size: 2em;
+        color: #343a40;
+    }
+
+    .content p {
+        margin-bottom: 15px;
+        color: #19192a;
+        font-family: 'Times New Roman', Times, serif;
+    }
+</style>

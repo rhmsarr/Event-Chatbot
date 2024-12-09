@@ -18,7 +18,6 @@ namespace EventChatbot.Controllers{
 
             return View();
         }
-        [HttpPost]
       
     private static MessageRepository messageRepository = new MessageRepository();
   
@@ -28,7 +27,7 @@ namespace EventChatbot.Controllers{
         string json = System.IO.File.ReadAllText(eventsFilePath);
     }
     
-    public IActionResult SendMessage(string message)
+    public void SendMessage(string message)
     {
        messageRepository.addMessage("User", message); //saves the user's input in a list
        
@@ -40,6 +39,8 @@ namespace EventChatbot.Controllers{
     
        ViewBag.chatHistory = messageRepository.getMessages(); //gets both the old and the new messages 
     }
+
+
       [HttpPost]
         public IActionResult Index(User model) {  
             // Action method that takes a `User` model as input.
@@ -66,9 +67,6 @@ namespace EventChatbot.Controllers{
             }
         }
 
-       return View("Index");
-    }
-    
     private string GenerateResponse() // this method is to make the chatbot generate a response based on only the last message sent
     {
         string lastMessage = messageRepository.getLastMessage().Content.ToLower();
