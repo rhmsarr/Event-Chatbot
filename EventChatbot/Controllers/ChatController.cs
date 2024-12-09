@@ -1,6 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using EventChatbot.Models;
 using Newtonsoft.Json;  
+using System;
+using System.Text;
+using RabbitMQ.Client;
+using RabbitMQ.Client.Events;
 
 namespace EventChatbot.Controllers{
     public class ChatController : Controller{
@@ -22,18 +26,16 @@ namespace EventChatbot.Controllers{
       
     private static MessageRepository messageRepository = new MessageRepository();
   
-    private void loadEvents() // it accesses the data in the event file, though it is still not used for providing a response
-    {
-        string eventsFilePath = Path.Combine(Directory.GetCurrentDirectory(),"data/events_data.json");
-        string json = System.IO.File.ReadAllText(eventsFilePath);
-    }
-    
-    public IActionResult SendMessage(string message)
+   
+
+   [HttpPost] 
+    public IActionResult GetResponse(string message)
     {
        messageRepository.addMessage("User", message); //saves the user's input in a list
        
-       loadEvents();// once integrated properly it should allow the chatbot to access the data file in order to provide a response based on the user's message
+       var factory = new ConnectionFactory(){HostName = "localhost"};
        
+
        string response = GenerateResponse(); 
        
        messageRepository.addMessage("Bot", response); // saves the chatbot's response in the list
@@ -41,6 +43,7 @@ namespace EventChatbot.Controllers{
        ViewBag.chatHistory = messageRepository.getMessages(); //gets both the old and the new messages 
         return View("Index");
     }
+
       [HttpPost]
         public IActionResult Index(User model) {  
             // Action method that takes a `User` model as input.
