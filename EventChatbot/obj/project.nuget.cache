@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3bgDUq3j9uw=",
+  "dgSpecHash": "J9Fgb6/nibE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\33780\\Desktop\\ai\\EventChatbot\\EventChatbot\\EventChatbot.csproj",
+  "projectFilePath": "C:\\Users\\33780\\Desktop\\ai\\clone\\Event-Chatbot\\EventChatbot\\EventChatbot.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\33780\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.0\\microsoft.extensions.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\33780\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0\\microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512",

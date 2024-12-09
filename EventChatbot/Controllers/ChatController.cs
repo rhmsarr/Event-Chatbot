@@ -18,7 +18,7 @@ namespace EventChatbot.Controllers{
 
             return View();
         }
-        [HttpPost]
+        
       
     private static MessageRepository messageRepository = new MessageRepository();
   
@@ -39,13 +39,13 @@ namespace EventChatbot.Controllers{
        messageRepository.addMessage("Bot", response); // saves the chatbot's response in the list
     
        ViewBag.chatHistory = messageRepository.getMessages(); //gets both the old and the new messages 
+        return View("Index");
     }
       [HttpPost]
         public IActionResult Index(User model) {  
             // Action method that takes a `User` model as input.
             // The purpose is to process user data, save it, and return a view.
 
-            // Create a new anonymous object to structure the user data.
             if(ModelState.IsValid)
             {
                
@@ -66,8 +66,7 @@ namespace EventChatbot.Controllers{
             }
         }
 
-       return View("Index");
-    }
+       
     
     private string GenerateResponse() // this method is to make the chatbot generate a response based on only the last message sent
     {

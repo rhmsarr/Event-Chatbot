@@ -464,11 +464,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\33780\\Desktop\\ai\\EventChatbot\\EventChatbot\\EventChatbot.csproj",
+      "projectUniqueName": "C:\\Users\\33780\\Desktop\\ai\\clone\\Event-Chatbot\\EventChatbot\\EventChatbot.csproj",
       "projectName": "EventChatbot",
-      "projectPath": "C:\\Users\\33780\\Desktop\\ai\\EventChatbot\\EventChatbot\\EventChatbot.csproj",
+      "projectPath": "C:\\Users\\33780\\Desktop\\ai\\clone\\Event-Chatbot\\EventChatbot\\EventChatbot.csproj",
       "packagesPath": "C:\\Users\\33780\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\33780\\Desktop\\ai\\EventChatbot\\EventChatbot\\obj\\",
+      "outputPath": "C:\\Users\\33780\\Desktop\\ai\\clone\\Event-Chatbot\\EventChatbot\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
