@@ -9,6 +9,9 @@ h1{
     margin-bottom: 50px;
     text-align: center;
 }
+#h1-modal3{
+    margin-bottom: 30px !important;
+}
 input{
     margin: auto;
 }
@@ -29,31 +32,32 @@ h3{
 #chat{
     box-sizing: border-box;
     padding: 20px;
-    min-height: calc(100vh - 3.5rem);
+    
+    display: flex;
+    flex-direction: column-reverse;
 }
 .text-bubble{
     border-radius: 15px;
     padding: 15px;
     margin: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    word-wrap: break-word;
+    max-width: 65%;
 }
 .user{
     background-color: hsl(202, 47%, 82%);
-    width: 65%;
-    float: right;
+    width: auto;
+    align-self: flex-end;
     margin-right: 10%;
 }
 .bot{
     background-color: hsl(214, 49%, 81%);
     width: 65%;
-    float: left;
+    align-self: flex-start;
     margin-left: 10%;
 
 }
-.pad{
-    height: 80px;
-    float: right;
-    width: 100%;
-}
+
 #send{
     position: fixed;  /* Fixes the element relative to the viewport */
     bottom: 0;        /* Positions the element at the bottom */
@@ -70,10 +74,18 @@ textarea{
     margin: none;
     width: 78vw;
     resize: none;
-    
+    padding-top: 0.8rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    padding-bottom: 0.3rem;    
 }
 #submit{
     float: right;
     margin: 10px;
     
+}
+.pad{
+    height: 80px;
+    float: right;
+    width: 100vw !important;
 }

@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\beyza\\OneDrive\\Desktop\\EventChatbot\\Event-Chatbot\\EventChatbot\\EventChatbot.csproj": {}
   },
   "projects": {
@@ -12,9 +13,26 @@
         "projectPath": "C:\\Users\\beyza\\OneDrive\\Desktop\\EventChatbot\\Event-Chatbot\\EventChatbot\\EventChatbot.csproj",
         "packagesPath": "C:\\Users\\beyza\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\beyza\\OneDrive\\Desktop\\EventChatbot\\Event-Chatbot\\EventChatbot\\obj\\",
+=======
+    "C:\\Users\\33780\\Desktop\\ai\\EventChatbot\\EventChatbot\\EventChatbot.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\33780\\Desktop\\ai\\EventChatbot\\EventChatbot\\EventChatbot.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\33780\\Desktop\\ai\\EventChatbot\\EventChatbot\\EventChatbot.csproj",
+        "projectName": "EventChatbot",
+        "projectPath": "C:\\Users\\33780\\Desktop\\ai\\EventChatbot\\EventChatbot\\EventChatbot.csproj",
+        "packagesPath": "C:\\Users\\33780\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\33780\\Desktop\\ai\\EventChatbot\\EventChatbot\\obj\\",
+>>>>>>> 88c7d4d0681d7cb378453f5286ff902156729345
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\beyza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\33780\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

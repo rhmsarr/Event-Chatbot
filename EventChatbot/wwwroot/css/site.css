@@ -155,14 +155,17 @@ html {
   padding: 20px;
   text-align: left;
 }
-#calendar-side {
-  background-color: #f8f9fa;
-  border: none;
+/* styles.css */
+.special-day.static {
+  background-color: #ff0c0c; /* Static özel günler için */
+  color: #000;
+  font-weight: bold;
 }
-#events-list {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+.special-day.dynamic {
+  background-color: #87CEEB; /* Dynamic özel günler için */
+  color: #000;
+  font-weight: bold;
 }
 
 

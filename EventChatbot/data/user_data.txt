@@ -1,8 +1,14 @@
 {
+<<<<<<< HEAD
   "Name": "Arif",
   "Interests": [
     "Sports",
     "Theology"
+=======
+  "Name": "jk",
+  "Interests": [
+    "PoliticalScience"
+>>>>>>> 88c7d4d0681d7cb378453f5286ff902156729345
   ],
   "Availability": {
     "Monday": {
@@ -14,7 +20,7 @@
       "PM": false
     },
     "Wednesday": {
-      "AM": false,
+      "AM": true,
       "PM": false
     },
     "Thursday": {
