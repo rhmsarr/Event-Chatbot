@@ -152,8 +152,17 @@ html {
 
 #events-side {
   background-color: #f8f9fa; /* Hafif gri arka plan */
-  padding: 20px;
+  padding: 10px;
   text-align: left;
+}
+#calendar-side {
+  background-color: #f8f9fa;
+  border: none;
+}
+#events-list {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 /* styles.css */
 .special-day.static {
@@ -163,10 +172,27 @@ html {
 }
 
 .special-day.dynamic {
-  background-color: #87CEEB; /* Dynamic özel günler için */
+  background-color: #FFFF00; /* Dynamic özel günler için */
   color: #000;
   font-weight: bold;
 }
+.events-container {
+  position: relative;
+  max-height: 400px; /* Maksimum yükseklik belirleyebilirsiniz */
+  overflow-y: auto; /* Taşma durumunda kaydırma çubuğu oluşturur */
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+#upcoming-events-title {
+  position: sticky;
+  top: 0; /* Sabit kalması gereken nokta */
+  background-color: white; /* Arkaplan rengi başlığın okunaklı kalması için */
+  z-index: 10; /* Üstte kalmasını sağlamak için z-index ayarı */
+  margin: 0;
+  padding: 10px 0;
+}
+
 
 
 
