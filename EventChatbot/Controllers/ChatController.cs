@@ -9,6 +9,12 @@ using RabbitMQ.Client.Events;
 namespace EventChatbot.Controllers{
     public class ChatController : Controller{
 
+        private readonly RabbitMqService _rabbitMqService;
+
+        public ChatController(RabbitMqService rabbitMqService){
+            _rabbitMqService = rabbitMqService;
+        }
+
         [HttpGet]
         public IActionResult Index(){
             bool openModalOnLoad= false;
@@ -18,29 +24,32 @@ namespace EventChatbot.Controllers{
             }
             ViewData["openModal"] = openModalOnLoad;
 
-            ViewBag.chatHistory = messageRepository.getMessages(); //passes all the previous messages to the view
+            ViewBag.chatHistory = MessageRepository.getMessages(); //passes all the previous messages to the view
 
             return View();
         }
         
       
-    private static MessageRepository messageRepository = new MessageRepository();
   
    
 
    [HttpPost] 
-    public IActionResult GetResponse(string message)
+    public async Task<IActionResult> GetResponse(string message)
     {
-       messageRepository.addMessage("User", message); //saves the user's input in a list
+        MessageRepository.addMessage("User", message); //saves the user's input in a list
+        
+        await _rabbitMqService.SendMessageAsync(message, MessageRepository.getMessages());
        
-       var factory = new ConnectionFactory(){HostName = "localhost"};
-       
+        _rabbitMqService.ListenForResponse(rep =>
+                    {
+                        MessageRepository.addMessage("Bot", rep);// saves the chatbot's response in the list
+                    });
 
-       string response = GenerateResponse(); 
+      
        
-       messageRepository.addMessage("Bot", response); // saves the chatbot's response in the list
+        
     
-       ViewBag.chatHistory = messageRepository.getMessages(); //gets both the old and the new messages 
+        ViewBag.chatHistory = MessageRepository.getMessages(); //gets both the old and the new messages 
         return View("Index");
     }
 
@@ -73,7 +82,7 @@ namespace EventChatbot.Controllers{
     
     private string GenerateResponse() // this method is to make the chatbot generate a response based on only the last message sent
     {
-        string lastMessage = messageRepository.getLastMessage().Content.ToLower();
+        string lastMessage = MessageRepository.getLastMessage().Content.ToLower();
         return $"You said: {lastMessage}. This is a placeholder response."; //forget this line i only added so the code won't give an error
         
     }

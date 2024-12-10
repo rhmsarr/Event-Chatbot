@@ -124,3 +124,4 @@ C:\Users\33780\Desktop\ai\clone\Event-Chatbot\EventChatbot\obj\Debug\net8.0\refi
 C:\Users\33780\Desktop\ai\clone\Event-Chatbot\EventChatbot\obj\Debug\net8.0\EventChatbot.pdb
 C:\Users\33780\Desktop\ai\clone\Event-Chatbot\EventChatbot\obj\Debug\net8.0\EventChatbot.genruntimeconfig.cache
 C:\Users\33780\Desktop\ai\clone\Event-Chatbot\EventChatbot\obj\Debug\net8.0\ref\EventChatbot.dll
+C:\Users\33780\Desktop\ai\clone\Event-Chatbot\EventChatbot\bin\Debug\net8.0\RabbitMQ.Client.dll

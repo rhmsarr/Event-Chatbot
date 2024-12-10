@@ -231,14 +231,27 @@
 
 
     <div id="chat">
-       
+        @{
+          List<Message> messages = ViewBag.ChatHistory;
+          
+          foreach(Message message in messages){
+            if(message.Sender == "Bot"){
+              <div class="bot text-bubble">@message.Content</div>
+            }
+            else{
+              <div class="user text-bubble">@message.Content</div>
+
+            }
+          }
+        }
     </div>
+  
         <div class=" pad"></div>
         
         <div id="send" class="d-flex justify-content-center align-items-center">
           <form asp-action="GetResponse" method="post">
          
-              <textarea name="" id="text"></textarea>
+              <textarea name="message" id="text"></textarea>
               <button type="submit"  id="submit" class="btn btn-sm">
                 <i class="bi bi-arrow-up-circle h1"></i>
               </button>
