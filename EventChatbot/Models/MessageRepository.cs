@@ -3,24 +3,24 @@ namespace EventChatbot.Models
 {
     public static class MessageRepository
     {
-        private static List<Message> chat;
+        private static Stack<Message> chat;
 
         static MessageRepository()
         {
-            chat = new List<Message>();
+            chat = new Stack<Message>();
         }
 
         public static void addMessage(string sender, string content)
         {
-          chat.Add(new Message (sender,content));
+          chat.Push(new Message (sender,content));
         }
 
-        public static Message getLastMessage()
+        public static void ClearHistory()
         {
-            return chat[chat.Count - 1];      
+            chat.Clear();      
         }
 
-        public static List<Message> getMessages()
+        public static Stack<Message> getMessages()
         {
             return chat;
         }

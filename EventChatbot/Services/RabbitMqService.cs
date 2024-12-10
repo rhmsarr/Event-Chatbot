@@ -5,6 +5,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using EventChatbot.Models;
+using System.Web;
 
 
 public class RabbitMqService
@@ -20,7 +21,7 @@ public class RabbitMqService
         _responseQueueName = configuration["RabbitMQ:ResponseQueueName"];
     }
 
-    public async Task SendMessageAsync(string prompt, List<Message> conversationHistory)
+    public async Task SendMessageAsync(string prompt, Stack<Message> conversationHistory)
     {
         var factory = new ConnectionFactory() { HostName = _hostName };
         using var connection = await factory.CreateConnectionAsync();
@@ -48,7 +49,12 @@ public class RabbitMqService
             {
                 var body = ea.Body.ToArray();
                 var response = Encoding.UTF8.GetString(body);
-                onResponse(response); // Trigger the callback with the response
+                 
+
+                var decodedResponse = System.Text.RegularExpressions.Regex.Unescape(response);
+                decodedResponse = decodedResponse.Replace("\n", "<br>");
+
+                onResponse(decodedResponse); // Trigger the callback with the response
                 return Task.CompletedTask;
             };
 

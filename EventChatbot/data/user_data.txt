@@ -1,23 +1,26 @@
 {
-  "Name": "da",
+  "Name": "rhm",
   "Interests": [
-    "Science"
+    "Technology",
+    "Arts",
+    "Science",
+    "Economy"
   ],
   "Availability": {
     "Monday": {
       "AM": false,
-      "PM": false
+      "PM": true
     },
     "Tuesday": {
       "AM": false,
       "PM": false
     },
     "Wednesday": {
-      "AM": false,
+      "AM": true,
       "PM": false
     },
     "Thursday": {
-      "AM": false,
+      "AM": true,
       "PM": false
     },
     "Friday": {
@@ -26,7 +29,7 @@
     },
     "Saturday": {
       "AM": false,
-      "PM": true
+      "PM": false
     },
     "Sunday": {
       "AM": false,

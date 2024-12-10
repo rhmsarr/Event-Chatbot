@@ -33,19 +33,27 @@ namespace EventChatbot.Controllers{
   
    
 
-   [HttpPost] 
+    [HttpPost]
     public async Task<IActionResult> GetResponse(string message)
     {
-        MessageRepository.addMessage("User", message); //saves the user's input in a list
+        if(message!=null)
+            MessageRepository.addMessage("User", message); //saves the user's input in a list
+
+        var tcs = new TaskCompletionSource<bool>(); //to render the view only after getting the response from the bot
+
+        var timeoutTask = Task.Delay(15000); // 30 seconds timeout
+        var responseTask = tcs.Task; // The task that will be completed once the response is received
         
         await _rabbitMqService.SendMessageAsync(message, MessageRepository.getMessages());
        
         _rabbitMqService.ListenForResponse(rep =>
                     {
                         MessageRepository.addMessage("Bot", rep);// saves the chatbot's response in the list
+                        tcs.SetResult(true);
                     });
 
-      
+
+        var CompletedTask = await Task.WhenAny(responseTask, timeoutTask); //wait for the chatbot response
        
         
     
@@ -54,7 +62,7 @@ namespace EventChatbot.Controllers{
     }
 
       [HttpPost]
-        public IActionResult Index(User model) {  
+        public async Task<IActionResult> Index(User model) {  
             // Action method that takes a `User` model as input.
             // The purpose is to process user data, save it, and return a view.
 
@@ -70,7 +78,28 @@ namespace EventChatbot.Controllers{
 
                 // Return the "test" view, passing the model as a parameter.
                 // This view is expected to display or use ChatGPT's reply along with the user data.
-                return View("test", model);
+                var tcs = new TaskCompletionSource<bool>(); //to render the view only after getting the response from the bot
+
+                MessageRepository.ClearHistory();
+
+                string message = "Greet the user and then recommend events based on the user's availability and the provided documents. Address the user directly.";
+                await _rabbitMqService.SendMessageAsync(message, MessageRepository.getMessages());
+            
+                _rabbitMqService.ListenForResponse(rep =>
+                            {
+                                MessageRepository.addMessage("Bot", rep);// saves the chatbot's response in the list
+
+                                tcs.SetResult(true);
+                            });
+
+
+                await tcs.Task; //wait for the chatbot response
+            
+                
+            
+                ViewBag.chatHistory = MessageRepository.getMessages(); //gets both the old and the new messages 
+                return View("Index");
+                        
             }
             else{
                 ViewData["openModal"] = true;
@@ -80,12 +109,7 @@ namespace EventChatbot.Controllers{
 
        
     
-    private string GenerateResponse() // this method is to make the chatbot generate a response based on only the last message sent
-    {
-        string lastMessage = MessageRepository.getLastMessage().Content.ToLower();
-        return $"You said: {lastMessage}. This is a placeholder response."; //forget this line i only added so the code won't give an error
-        
-    }
+   
     
 
    
