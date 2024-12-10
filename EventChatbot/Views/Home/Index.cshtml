@@ -1,4 +1,4 @@
-﻿@{
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -10,18 +10,57 @@
         margin-bottom: 20px; /* Optional: space below the header */
         border-radius: 10px;
     }
-    #calendar-side{
+
+    #calendar-side {
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
-
     }
-    #events-side{
+
+    #events-side {
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
     }
 
-   
+    #events-list {
+        width: 90%;
+        height: 400px; /* Sabit bir yükseklik */
+        overflow-y: auto; /* Kaydırılabilir hale getirme */
+        border: 1px solid #ccc;
+        padding: 10px;
+    }
+
+    #events-side h2 {
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 10;
+        padding: 10px 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .calendar-container {
+        margin-top: 20px;
+    }
+
+    .calendar-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .calendar-table th, .calendar-table td {
+        text-align: center;
+        padding: 5px;
+        border: 1px solid #ccc;
+    }
+    .calendar-table .calendar-day:hover {
+        cursor: pointer;
+        background-color: #f8f9fa;
+    }
 </style>
+
 <div class="text-center">
     <div class="header">
         <h1 class="display-5">Event and Activity Recommender</h1>
@@ -33,9 +72,9 @@
             <!-- Takvim -->
             <div class="calendar-container">
                 <div class="calendar-header">
-                    <button id="prev-month" class="btn ">Previous</button>
+                    <button id="prev-month" class="btn btn-info">Previous</button>
                     <span id="month-name"></span>
-                    <button id="next-month" class="btn ">Next</button>
+                    <button id="next-month" class="btn btn-info">Next</button>
                 </div>
                 <table class="calendar-table">
                     <thead>
@@ -65,44 +104,31 @@
         <div class="d-flex flex-column border flex-fill col-sm-12 col-lg-6" id="events-side">
             <div class="d-flex flex-column align-items-center justify-content-center">
                 <h2>Upcoming Events</h2>
-                <div id="events-list" class="border p-3" style="width: 90%; height: 80%; overflow-y: auto;">
+                <div id="events-list">
                     <!-- Etkinlikler buraya dinamik olarak eklenecek -->
                     <p>No events yet. Add special days to populate events here.</p>
                 </div>
             </div>
-             <!-- Proceed Button -->
+            <!-- Proceed Button -->
             <div class="d-flex align-items-center justify-content-center border flex-fill" style="margin-top: 10px;">
-                <a class="btn" role="button" asp-action="Index" asp-controller="Chat">Proceed to Chatbot</a>
+                <a class="btn btn-info" role="button" asp-action="Index" asp-controller="Chat">Proceed to Chatbot</a>
             </div>
         </div>
     </div>
 </div>
-                    
 
-           
-       
-<!-- Footer, only present in Home page -->
+<!-- Footer -->
 <footer class="border-top footer text-muted">
-        <div class="container" style="text-align: center; height: 5rem; padding-top: 2rem;" >
-            &copy; 2024 - Made with <i class="bi bi-heart"></i> by Arda, Betül, Beyza, Leen & Rahma
-        </div>
+    <div class="container" style="text-align: center; height: 5rem; padding-top: 2rem;">
+        &copy; 2024 - Made with <i class="bi bi-heart"></i> by Arda, Betül, Beyza, Leen & Rahma
+    </div>
 </footer>
 
-<script src="~/js/site.js" ></script>
-
-<!-- Include jQuery, Popper.js, and Bootstrap JS (in the correct order) -->
+<!-- Scripts -->
+<script src="~/js/site.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
-
-<!-- FullCalendar ve Bootstrap CSS -->
-
-<!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<!-- FullCalendar JS -->
 <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.js"></script>
-    
-
-
-<script src="script.js"></script> <!-- JS Dosyasını Bağla -->
+<script src="script.js"></script>
