@@ -1,26 +1,26 @@
 using System.Collections.Generic;
 namespace EventChatbot.Models
 {
-    public class MessageRepository
+    public static class MessageRepository
     {
-        private List<Message> chat;
+        private static Stack<Message> chat;
 
-        public MessageRepository()
+        static MessageRepository()
         {
-            chat = new List<Message>();
+            chat = new Stack<Message>();
         }
 
-        public void addMessage(string sender, string content)
+        public static void addMessage(string sender, string content)
         {
-          chat.Add(new Message (sender,content));
+          chat.Push(new Message (sender,content));
         }
 
-        public Message getLastMessage()
+        public static void ClearHistory()
         {
-            return chat[chat.Count - 1];      
+            chat.Clear();      
         }
 
-        public List<Message> getMessages()
+        public static Stack<Message> getMessages()
         {
             return chat;
         }

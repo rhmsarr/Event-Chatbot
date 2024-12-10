@@ -56,7 +56,7 @@ def get_answer(user_history, user_query):
         # Perform similarity searches to retrieve relevant documents based on user query.
         results1 = vector_store.similarity_search(user_query, k=1)  # Top 1 most similar document.
         results2 = vector_store.similarity_search(user_query, k=2)  # Top 2 most similar documents.
-        
+
         # Combining the results from both searches.
         combined = results1 + results2
 
@@ -68,7 +68,7 @@ def get_answer(user_history, user_query):
         f"providing thoughtful and context-aware responses. Below is the conversation so far, followed by the user's most recent query. "
         f"Use the context of the conversation to respond appropriately.\n\n"
         f"### Conversation History:\n"
-        f"''{user_history}\n\n"  # Include the entire conversation history
+        f"{''.join(user_history)}\n\n"  # Include the entire conversation history
         f"### User Query:\n{user_query}\n\n"
         f"### Relevant Documents:\n{relevant_documents}\n\n"
         f"### Instructions:\n"
@@ -83,7 +83,7 @@ def get_answer(user_history, user_query):
 
         # Invoking the LLM to generate a response based on the prompt.
         response = llm.invoke(prompt)
-        return(response.content)  # Printing the LLM-generated response.
+        return(f"Assistant: {response.content}\n")  # Printing the LLM-generated response.
 
         
 
@@ -91,41 +91,12 @@ def get_answer(user_history, user_query):
 
     # Handling any exceptions that may occur during file reading or processing.
     except Exception as e:
-        return(f"error: {e}")  # Printing the error message.
+        return(f"Document handling error: {e}")  # Printing the error message.
     
 def main():
-    #RabbitMq connection setup
-    connection = pika.BlockingConnection(pika.ConnectionParameters(host='localhost'))
-    channel = connection.channel()
-
-    #declare queue where the app will send prompts
-    channel.queue_declare(queue='chatbot_queue')
-
-    #callback for incoming messages handling
-    def callback(ch, method, poperties, body):
-        #decodes by converting bytes to string
-        message = json.loads(body.decode())
-        prompt = message["prompt"]
-        conversation_history = message["conversation_history"]
-        print(f"received prompt: {prompt}")
-
-        response = get_answer(conversation_history, prompt)
-
-        print(f"sending response: {response}")
-        
-        response_message = response
-        
-        #sending the response back
-        channel.basic_publish(exchange='',
-                              routing_key='response_queue',
-                              body=json.dumps(response_message))
-        
-        #setting up a consumer for the queue
-    channel.basic_consume(queue='chatbot_queue',
-                              on_message_callback=callback,
-                              auto_ack=True)
-    print('Waiting for messages. To exit press CTRL+C')
-    channel.start_consuming()
+    user_history = []
+    prompt = input("you: ")
+    print(get_answer(user_history, prompt))
 
 if __name__ == "__main__":
     main()

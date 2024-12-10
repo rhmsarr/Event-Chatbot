@@ -6,7 +6,7 @@
   "Availability": {
     "Monday": {
       "AM": false,
-      "PM": false
+      "PM": true
     },
     "Tuesday": {
       "AM": false,
@@ -17,7 +17,7 @@
       "PM": false
     },
     "Thursday": {
-      "AM": false,
+      "AM": true,
       "PM": false
     },
     "Friday": {
