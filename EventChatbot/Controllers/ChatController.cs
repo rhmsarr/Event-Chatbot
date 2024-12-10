@@ -60,7 +60,6 @@ namespace EventChatbot.Controllers{
         ViewBag.chatHistory = MessageRepository.getMessages(); //gets both the old and the new messages 
         return View("Index");
     }
-
       [HttpPost]
         public async Task<IActionResult> Index(User model) {  
             // Action method that takes a `User` model as input.
@@ -107,9 +106,7 @@ namespace EventChatbot.Controllers{
             }
         }
 
-       
-    
-   
+      
     
 
    
